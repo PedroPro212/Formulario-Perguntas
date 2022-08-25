@@ -16,32 +16,32 @@ namespace Avaliacao.Admin.Login
 
         protected void CadAluno_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("../Aluno/CadastroAlunos.aspx");
         }
 
         protected void ExibAluno_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("../Aluno/ExibirAlunos.aspx");
         }
 
         protected void CadProf_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("../Professor/CadastroProfessores.aspx");
         }
 
         protected void ExibProf_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("../Professor/ExibirProfessores.aspx");
         }
 
         protected void CadPergunta_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("../Perguntas/CadastroPerguntas.aspx");
         }
 
         protected void ExibPergunta_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("../Perguntas/ExibirPerguntas.aspx");
         }
     }
 }

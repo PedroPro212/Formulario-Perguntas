@@ -20,8 +20,7 @@ namespace Avaliacao
         { 
             if ((txtLogin.Text == login)&&(txtSenha.Text==senha))
             {
-                txtLogin.Text = "";
-                SiteMaster.ExibirAlert(this, "Aprovado");
+                Response.Redirect("SelecionarPagina.aspx");
             }
             else
             {
