@@ -20,7 +20,7 @@ namespace Avaliacao
         {
             if ((txtLogin.Text == login)&&(txtSenha.Text==senha))
             {
-                Response.Redirect("CadastroProfAluno.aspx");
+                Response.Redirect("SelecionarPagina.aspx");
             }
             else
             {
