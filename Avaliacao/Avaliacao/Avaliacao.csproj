@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Avaliacao</RootNamespace>
     <AssemblyName>Avaliacao</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,10 +49,6 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
@@ -108,6 +105,7 @@
     <Content Include="Admin\Aluno\AtualizarAlunos.aspx" />
     <Content Include="Admin\Aluno\CadastroAlunos.aspx" />
     <Content Include="Admin\Aluno\ExibirAlunos.aspx" />
+    <Content Include="Admin\Login\login.css" />
     <Content Include="Admin\Login\SelecionarPagina.aspx" />
     <Content Include="Admin\Perguntas\AtualizarPerguntas.aspx" />
     <Content Include="Admin\Professor\AtualizarProfessores.aspx" />
@@ -275,6 +273,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="imgs\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

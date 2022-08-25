@@ -17,13 +17,15 @@ namespace Avaliacao
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
-        {
+        { 
             if ((txtLogin.Text == login)&&(txtSenha.Text==senha))
             {
-                Response.Redirect("CadastroProfAluno.aspx");
+                txtLogin.Text = "";
+                SiteMaster.ExibirAlert(this, "Aprovado");
             }
             else
             {
+                txtLogin.Text = "";
                 SiteMaster.ExibirAlert(this, "Login ou senha incorretos.");
             }
         }
