@@ -17,13 +17,14 @@ namespace Avaliacao
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
-        {
+        { 
             if ((txtLogin.Text == login)&&(txtSenha.Text==senha))
             {
                 Response.Redirect("SelecionarPagina.aspx");
             }
             else
             {
+                txtLogin.Text = "";
                 SiteMaster.ExibirAlert(this, "Login ou senha incorretos.");
             }
         }

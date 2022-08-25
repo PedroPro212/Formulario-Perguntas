@@ -22,5 +22,13 @@ namespace Avaliacao
                  "<script language='javascript'>alert('" + mensagem + "');</script>"
               );
         }
+        public static void ExibirAlert(Page page, string mensagem, string pagina)
+        {
+            page.ClientScript.RegisterStartupScript(
+                 page.GetType(),
+                 "MessageBox" + Guid.NewGuid(),
+                 "<script language='javascript'>alert('" + mensagem + "');window.location = '" + pagina + "';</script>"
+              );
+        }
     }
 }
