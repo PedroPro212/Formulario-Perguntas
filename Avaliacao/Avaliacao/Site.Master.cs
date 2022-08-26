@@ -9,6 +9,8 @@ namespace Avaliacao
 {
     public partial class SiteMaster : MasterPage
     {
+        public static string ConnectionString = "Server=127.0.0.1;User ID=root;Password=;Database=projetoavaliacaoprofessores3";
+
         protected void Page_Load(object sender, EventArgs e)
         {
 

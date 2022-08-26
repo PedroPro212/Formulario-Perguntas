@@ -7,7 +7,7 @@
 
     <asp:GridView runat="server" ID="grdAlunos" Width="100%" AutoGenerateColumns="false" OnRowCommand="grdAlunos_RowCommand">
         <Columns>
-
+                <asp:BoundField DataField="nome" HeaderText="NOME" />
                 <asp:ButtonField ButtonType="Link" CommandName="editar" ControlStyle-CssClass="btn btn-warning" Text="Editar" />
                 <asp:ButtonField ButtonType="Link" CommandName="excluir" ControlStyle-CssClass="btn btn-danger" Text="Excluir" />
         </Columns>

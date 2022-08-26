@@ -16,7 +16,12 @@ namespace Avaliacao.Admin
 
         protected void CadastrarPergunta_Click(object sender, EventArgs e)
         {
+            var pergunta = new Classes.Pergunta();
+            pergunta.Descricao = txtPergunta.Text;
+            new Negocio.Pergunta().Create(pergunta);
 
+            SiteMaster.ExibirAlert(this, "Pergunta cadastrada com sucesso.");
+            txtPergunta.Text = "";
         }
     }
 }
