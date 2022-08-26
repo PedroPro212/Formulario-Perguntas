@@ -1,0 +1,25 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yanone+Kaffeesatz&display=swap');
+
+body {
+    background-color: azure;
+}
+
+.tit {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.btns {
+    margin-top: 5px;
+    width: 150px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 19px;
+    box-shadow: black 1px 1px 1px;
+}
+
+.imgProf{
+    margin-top:20px;
+}
