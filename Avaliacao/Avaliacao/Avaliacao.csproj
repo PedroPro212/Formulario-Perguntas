@@ -108,9 +108,11 @@
   <ItemGroup>
     <Content Include="Admin\Aluno\AtualizarAlunos.aspx" />
     <Content Include="Admin\Aluno\CadastroAlunos.aspx" />
+    <Content Include="Admin\Aluno\Estilos\CadastarAluno.css" />
     <Content Include="Admin\Aluno\ExibirAlunos.aspx" />
     <Content Include="Admin\Login\login.css" />
     <Content Include="Admin\Login\SelecionarPagina.aspx" />
+    <Content Include="Admin\Login\selecionartela.css" />
     <Content Include="Admin\Perguntas\AtualizarPerguntas.aspx" />
     <Content Include="Admin\Professor\AtualizarProfessores.aspx" />
     <Content Include="Admin\Perguntas\ExibirPerguntas.aspx" />
