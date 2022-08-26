@@ -6,6 +6,6 @@
     <asp:Button runat="server" id="CadProf" Text="Cadastrar Professores" OnClick="CadProf_Click"/>
     <asp:Button runat="server" id="ExibProf" Text="Exibir Professores" OnClick="ExibProf_Click"/>
     <asp:Button runat="server" id="CadPergunta" Text="Cadastrar Perguntas" OnClick="CadPergunta_Click" />
-    <asp:Button runat="server" id="ExibPergunta" Text="Cadastrar Alunos" OnClick="ExibPergunta_Click" />
+    <asp:Button runat="server" id="ExibPergunta" Text="Exibir Perguntas" OnClick="ExibPergunta_Click" />
 
 </asp:Content>

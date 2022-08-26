@@ -16,7 +16,12 @@ namespace Avaliacao.Admin
 
         protected void CadastrarAluno_Click(object sender, EventArgs e)
         {
+            var aluno = new Classes.Aluno();
+            aluno.Nome = txtNome.Text;
+            new Negocio.Aluno().Create(aluno);
 
+            SiteMaster.ExibirAlert(this, "Aluno cadastrado com sucesso.");
+            txtNome.Text = "";
         }
     }
 }
