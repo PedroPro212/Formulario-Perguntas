@@ -62,7 +62,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Pedro gay</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Avaliação</p>
             </footer>
         </div>
 
