@@ -46,11 +46,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -80,6 +83,7 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -104,9 +108,11 @@
   <ItemGroup>
     <Content Include="Admin\Aluno\AtualizarAlunos.aspx" />
     <Content Include="Admin\Aluno\CadastroAlunos.aspx" />
+    <Content Include="Admin\Aluno\Estilos\CadastarAluno.css" />
     <Content Include="Admin\Aluno\ExibirAlunos.aspx" />
     <Content Include="Admin\Login\login.css" />
     <Content Include="Admin\Login\SelecionarPagina.aspx" />
+    <Content Include="Admin\Login\selecionartela.css" />
     <Content Include="Admin\Perguntas\AtualizarPerguntas.aspx" />
     <Content Include="Admin\Professor\AtualizarProfessores.aspx" />
     <Content Include="Admin\Perguntas\ExibirPerguntas.aspx" />
@@ -246,6 +252,9 @@
     <Compile Include="Admin\Login\LoginAdmin.aspx.designer.cs">
       <DependentUpon>LoginAdmin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Aluno.cs" />
+    <Compile Include="Classes\Pergunta.cs" />
+    <Compile Include="Classes\Professor.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

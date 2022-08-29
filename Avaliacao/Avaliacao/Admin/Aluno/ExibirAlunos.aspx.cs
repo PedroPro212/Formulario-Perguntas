@@ -21,12 +21,15 @@ namespace Avaliacao.Admin.Aluno
 
         protected void PesquisarAluno_Click(object sender, EventArgs e)
         {
-
+            var alunos = new Negocio.Aluno().Read("", txtNome.Text);
+            Session["dados"] = alunos;
+            grdAlunos.DataSource = alunos;
+            grdAlunos.DataBind();
         }
 
         protected void CadastrarAluno_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("CadastroAlunos.aspx");
         }
     }
 }

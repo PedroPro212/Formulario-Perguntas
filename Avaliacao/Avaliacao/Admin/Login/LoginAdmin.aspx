@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LoginAdmin.aspx.cs" Inherits="Avaliacao._Default" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <link rel="stylesheet" href="login.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <div class="container">
         <div class="box">
@@ -21,9 +22,11 @@
                     <asp:TextBox runat="server" ID="txtSenha" CssClass="form-control" TextMode="Password"></asp:TextBox><br />
                 </div>
             </div>
-            <div class="col-sm-5"></div>
-            <div class="row text-left">
-                <asp:Button runat="server" ID="btnLogin" Text="Fazer login" CssClass="btn btn-success" OnClick="btnLogin_Click" />
+            <div class="row">
+                <div class="col-sm-5"></div>
+                <div class="col-sm-3">
+                    <asp:Button runat="server" ID="btnLogin" Text="Fazer login" CssClass="btn btn-success" OnClick="btnLogin_Click" />
+                </div>
             </div>
             <div class="container">
                 <div class="row">
