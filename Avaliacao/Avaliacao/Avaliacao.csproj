@@ -258,6 +258,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Negocio\Aluno.cs" />
+    <Compile Include="Negocio\Pergunta.cs" />
+    <Compile Include="Negocio\Professor.cs" />
     <Compile Include="Perguntas Gabriel\Perguntas f.aspx.cs">
       <DependentUpon>Perguntas f.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -290,7 +293,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="bin\" />
     <Folder Include="imgs\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
