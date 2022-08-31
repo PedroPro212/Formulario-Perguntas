@@ -62,7 +62,7 @@ namespace Avaliacao.Negocio
             try
             {
                 connection.Open();
-                var comando = new MySqlCommand($@"INSERT INTO alunos (nome,email,senha) VALUES (@nome,null,null)", connection);
+                var comando = new MySqlCommand($@"INSERT INTO alunos (nome) VALUES (@nome)", connection);
                 comando.Parameters.Add(new MySqlParameter("nome", aluno.Nome));
                 comando.ExecuteNonQuery();
                 connection.Close();

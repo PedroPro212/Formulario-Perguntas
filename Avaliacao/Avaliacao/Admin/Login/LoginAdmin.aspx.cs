@@ -9,7 +9,7 @@ namespace Avaliacao
 {
     public partial class _Default : Page
     {
-        public static string login = "admin", senha = "123";
+        public static string login = "pedro", senha = "gay";
 
         protected void Page_Load(object sender, EventArgs e)
         {
