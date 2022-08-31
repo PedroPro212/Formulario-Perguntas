@@ -203,7 +203,17 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+
     <Content Include="bin\Avaliacao.dll.config" />
+
+    <Content Include="Grafico\Grafico.aspx" />
+    <Content Include="Grafico\testenão oficial.html" />
+    <Content Include="obj\Debug\Avaliacao.csproj.CopyComplete" />
+    <Content Include="obj\Debug\Avaliacao.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\Avaliacao.csprojAssemblyReference.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\Avaliacao.csproj.CoreCompileInputs.cache" />
+
     <Content Include="bin\roslyn\csc.exe.config" />
     <Content Include="bin\roslyn\csc.rsp" />
     <Content Include="bin\roslyn\csi.exe.config" />
@@ -214,11 +224,7 @@
     <Content Include="bin\roslyn\vbc.exe.config" />
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
-    <Content Include="obj\Debug\Avaliacao.csproj.CopyComplete" />
-    <Content Include="obj\Debug\Avaliacao.csproj.CoreCompileInputs.cache" />
-    <Content Include="obj\Debug\Avaliacao.csprojAssemblyReference.cache" />
-    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="obj\Debug\Avaliacao.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\Avaliacao.dll" />
@@ -343,6 +349,14 @@
     <Compile Include="Classes\Professor.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+
+    <Compile Include="Grafico\Grafico.aspx.cs">
+      <DependentUpon>Grafico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Grafico\Grafico.aspx.designer.cs">
+      <DependentUpon>Grafico.aspx</DependentUpon>
     </Compile>
     <Compile Include="Negocio\Aluno.cs" />
     <Compile Include="Negocio\Pergunta.cs" />
