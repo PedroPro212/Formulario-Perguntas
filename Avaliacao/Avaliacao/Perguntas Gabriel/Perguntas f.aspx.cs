@@ -27,23 +27,23 @@ namespace Avaliacao.Perguntas
         {
             if (Alternativa_1.Checked == true)
             {
-                PedroGay.Text = "Selecionou " + Alternativa_1.Text;
+                lblResultado.Text = "Selecionou " + Alternativa_1.Text;
             }
             else if (Alternativa_2.Checked)
             {
-                PedroGay.Text = "escolheu " + Alternativa_2.Text;
+                lblResultado.Text = "escolheu " + Alternativa_2.Text;
             }
             else if (Alternativa_3.Checked)
             {
-                PedroGay.Text = "clicou em " + Alternativa_3.Text;
+                lblResultado.Text = "clicou em " + Alternativa_3.Text;
             }
             else if (Alternativa_4.Checked)
             {
-                PedroGay.Text = "Apertou " + Alternativa_4.Text;
+                lblResultado.Text = "Apertou " + Alternativa_4.Text;
             }
             else if (Alternativa_5.Checked)
             {
-                PedroGay.Text = "bateu em " + Alternativa_5.Text;
+                lblResultado.Text = "bateu em " + Alternativa_5.Text;
             }
         }
     }
