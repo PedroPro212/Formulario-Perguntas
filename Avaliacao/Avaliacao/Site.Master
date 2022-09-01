@@ -76,9 +76,9 @@
                               <li><a runat="server" href="/Admin/Professor/ExibirProfessores">Exibir</a></li>
 
                             </ul>
-                            
-
-                              <li> <a href="/Admin/Login/LoginAdmin"><img src="/../../imgs/ettings_24px.png" class="media-object  img-responsive" ></a></li>
+                            <div style="width:800px"></div>
+                              <li> <a href="/Perguntas/Perguntas"><img src="/../../imgs/questions_24px.png" class="media-object  img-responsive" ></a></li>
+                              <li><a runat="server" href="/Admin/Login/LoginAdmin"><img src="/../../imgs/admin_settings_male_24px.png"  class="media-object  img-responsive" ></a></li>
                                 
 
 
