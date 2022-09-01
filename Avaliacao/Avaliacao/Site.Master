@@ -64,16 +64,22 @@
                               <li><a runat="server" href="/Admin/Aluno/AtualizarAlunos.aspx">Aluno Update</a></li>
                               <li><a                href="/Admin/Aluno/ExibirAlunos.aspx">Alunos Lista</a></li>
 
-                    </ul>
+                            </ul>
 
-                           <li> <a runat="server" href="~/Admin/Login/LoginAdmin">Login Admin</a></li>
-                        <div style="width: 1000px;"></div><%--empurra o icone pra direita--%>
-                              <li> <a href="/Admin/Login/LoginAdmin"><img src="/../../imgs/gear_24010.png" class="media-object  img-responsive" style="margin-left:750px;"></a></li>
+                             <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Professores
+                             <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu">
+                              <li><a                href="/Admin/Aluno/AtualizarAlunos">Atualizar</a></li>
+                              <li><a runat="server" href="/Admin/Professor/CadastroProfessores">Cadastrar</a></li>
+                              <li><a runat="server" href="/Admin/Professor/ExibirProfessores">Exibir</a></li>
+
+                            </ul>
+                            
+
+                              <li> <a href="/Admin/Login/LoginAdmin"><img src="/../../imgs/ettings_24px.png" class="media-object  img-responsive" ></a></li>
                                 
-
-
-
-                             
 
 
                 </div>
