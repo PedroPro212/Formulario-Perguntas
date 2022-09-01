@@ -16,17 +16,30 @@ namespace Avaliacao.Admin.Perguntas
 
         protected void CadastrarPergunta_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("CadastroPerguntas.aspx");
         }
 
         protected void PesquisarPergunta_Click(object sender, EventArgs e)
         {
-
+            var perguntas = new Negocio.Pergunta().Read("", txtPergunta.Text);
+            Session["dados"] = perguntas;
+            grdPerguntas.DataSource = perguntas;
+            grdPerguntas.DataBind();
         }
 
         protected void grdPerguntas_RowCommand(object sender, GridViewCommandEventArgs e)
         {
+            int index = Convert.ToInt32(e.CommandArgument);
+            var perguntas = (List<Classes.Pergunta>)Session["dados"];
 
+            if (e.CommandName == "excluir")
+            {
+                if (new Negocio.Professor().Delete(perguntas[index].Id))
+                    SiteMaster.ExibirAlert(this, "Pergunta excluída com sucesso!");
+                else
+                    SiteMaster.ExibirAlert(this, "A pergunta não pode ser excluída pois está sendo usada! ");
+                PesquisarPergunta_Click(null, null);
+            }
         }
     }
 }

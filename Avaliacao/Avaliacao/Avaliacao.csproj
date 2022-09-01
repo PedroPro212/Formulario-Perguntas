@@ -177,6 +177,7 @@
     <Content Include="bin\Avaliacao.dll" />
     <Content Include="bin\Avaliacao.pdb" />
     <Content Include="bin\BouncyCastle.Crypto.dll" />
+
     <Content Include="bin\BouncyCastle.Crypto.xml" />
     <Content Include="bin\Google.Protobuf.dll" />
     <Content Include="bin\Google.Protobuf.pdb" />
@@ -187,6 +188,12 @@
     <Content Include="bin\K4os.Compression.LZ4.xml" />
     <Content Include="bin\K4os.Hash.xxHash.dll" />
     <Content Include="bin\K4os.Hash.xxHash.xml" />
+
+    <Content Include="bin\Google.Protobuf.dll" />
+    <Content Include="bin\K4os.Compression.LZ4.dll" />
+    <Content Include="bin\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="bin\K4os.Hash.xxHash.dll" />
+
     <Content Include="bin\Microsoft.AspNet.FriendlyUrls.dll" />
     <Content Include="bin\Microsoft.AspNet.FriendlyUrls.xml" />
     <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
@@ -195,8 +202,10 @@
     <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll" />
     <Content Include="bin\Microsoft.ScriptManager.WebForms.dll" />
     <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="bin\MySqlConnector.dll" />
-    <Content Include="bin\MySqlConnector.xml" />
+
+    <Content Include="bin\MySql.Data.dll" />
+    <Content Include="bin\MySql.Data.xml" />
+
     <Content Include="bin\Newtonsoft.Json.dll" />
     <Content Include="bin\Newtonsoft.Json.xml" />
     <Content Include="bin\pt-br\Microsoft.AspNet.FriendlyUrls.resources.dll" />
@@ -238,6 +247,7 @@
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="bin\System.Buffers.dll" />
+
     <Content Include="bin\System.Buffers.xml" />
     <Content Include="bin\System.Diagnostics.DiagnosticSource.dll" />
     <Content Include="bin\System.Diagnostics.DiagnosticSource.xml" />
@@ -249,6 +259,7 @@
     <Content Include="bin\System.Runtime.CompilerServices.Unsafe.xml" />
     <Content Include="bin\System.Threading.Tasks.Extensions.dll" />
     <Content Include="bin\System.Threading.Tasks.Extensions.xml" />
+
     <Content Include="bin\System.Web.Optimization.dll" />
     <Content Include="bin\System.Web.Optimization.xml" />
     <Content Include="bin\Ubiety.Dns.Core.dll" />
@@ -271,12 +282,25 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+
     <Content Include="obj\Debug\Avaliacao.csproj.AssemblyReference.cache" />
     <Content Include="obj\Debug\Avaliacao.csproj.CopyComplete" />
     <Content Include="obj\Debug\Avaliacao.csproj.CoreCompileInputs.cache" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="bin\Avaliacao.dll.config" />
+
+    <Content Include="bin\Avaliacao.dll.config" />
+
+    <Content Include="Grafico\Grafico.aspx" />
+    <Content Include="Grafico\testenão oficial.html" />
+    <Content Include="obj\Debug\Avaliacao.csproj.CopyComplete" />
+    <Content Include="obj\Debug\Avaliacao.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\Avaliacao.csprojAssemblyReference.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\Avaliacao.csproj.CoreCompileInputs.cache" />
+
+
     <Content Include="bin\roslyn\csc.exe.config" />
     <Content Include="bin\roslyn\csc.rsp" />
     <Content Include="bin\roslyn\csi.exe.config" />
@@ -287,6 +311,7 @@
     <Content Include="bin\roslyn\vbc.exe.config" />
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="obj\Debug\Avaliacao.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\Avaliacao.dll" />
@@ -412,10 +437,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+
+    <Compile Include="Grafico\Grafico.aspx.cs">
+      <DependentUpon>Grafico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Grafico\Grafico.aspx.designer.cs">
+      <DependentUpon>Grafico.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Negocio\Aluno.cs" />
     <Compile Include="Negocio\Pergunta.cs" />
     <Compile Include="Negocio\Professor.cs" />
-    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+
     <Compile Include="Perguntas Gabriel\Perguntas f.aspx.cs">
       <DependentUpon>Perguntas f.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
