@@ -13,66 +13,120 @@ namespace Avaliacao.Perguntas {
     public partial class FrontEnd_Perguntas {
         
         /// <summary>
-        /// Controle Alternativa_1.
+        /// Controle ddlAluno.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton Alternativa_1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlAluno;
         
         /// <summary>
-        /// Controle Alternativa_2.
+        /// Controle ddlCurso.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton Alternativa_2;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCurso;
         
         /// <summary>
-        /// Controle Alternativa_3.
+        /// Controle lblPergunta1.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton Alternativa_3;
+        protected global::System.Web.UI.WebControls.Label lblPergunta1;
         
         /// <summary>
-        /// Controle Alternativa_4.
+        /// Controle rdnPergunta1.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton Alternativa_4;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdnPergunta1;
         
         /// <summary>
-        /// Controle Alternativa_5.
+        /// Controle lblPergunta2.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton Alternativa_5;
+        protected global::System.Web.UI.WebControls.Label lblPergunta2;
         
         /// <summary>
-        /// Controle PedroGay.
+        /// Controle rdnPergunta2.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label PedroGay;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdnPergunta2;
         
         /// <summary>
-        /// Controle BUTAO.
+        /// Controle lblPergunta3.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BUTAO;
+        protected global::System.Web.UI.WebControls.Label lblPergunta3;
+        
+        /// <summary>
+        /// Controle rdnPergunta3.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rdnPergunta3;
+        
+        /// <summary>
+        /// Controle lblPergunta4.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPergunta4;
+        
+        /// <summary>
+        /// Controle rdnPergunta4.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rdnPergunta4;
+        
+        /// <summary>
+        /// Controle lblPergunta5.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPergunta5;
+        
+        /// <summary>
+        /// Controle rdnPergunta5.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rdnPergunta5;
+        
+        /// <summary>
+        /// Controle BtnSubmit.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnSubmit;
     }
 }
