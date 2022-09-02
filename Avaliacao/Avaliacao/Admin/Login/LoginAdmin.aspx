@@ -32,6 +32,7 @@
                         <div style="margin-bottom:15px;"></div>
                         <asp:Button runat="server" ID="btnLogin" Text="Fazer login" CssClass="btn btn-primary col-sm-12" OnClick="btnLogin_Click"/>
                     <div style="margin-bottom:80px;"></div>
+
                 </div>
             </div>
         </div>
