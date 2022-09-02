@@ -20,7 +20,7 @@ namespace Avaliacao.Admin
             aluno.Nome = txtNome.Text;
             new Negocio.Aluno().Create(aluno);
 
-            SiteMaster.ExibirAlert(this, "Aluno cadastrado com sucesso.");
+            SiteMaster.AlertPersonalizado(this, "Aluno cadastrado com sucesso.");
             txtNome.Text = "";
         }
     }

@@ -13,11 +13,11 @@
         <asp:RadioButton id="Alternativa_4" Text="  (╯°□°）╯︵ ┻━┻    " Checked="True" GroupName="RadioGroup1" runat="server" />
         <asp:RadioButton id="Alternativa_5" Text="  ಥ_ಥ " Checked="True" GroupName="RadioGroup1" runat="server" /><br>
 
-        <asp:Label ID="PedroGay" runat="server" Text="uiui"/><br>
+        <asp:Label ID="lblResultado" runat="server" Text="uiui"/><br>
 
         <asp:Button  ID="BUTAO" Text="submit" runat="server" OnClick="BUTAO_Click"/>
        
-         <div/>
+    </div>
 
 
 </asp:Content>
