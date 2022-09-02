@@ -15,15 +15,15 @@
         <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-3">
-                <asp:Button runat="server" CssClass="btns btn-success" id="CadAluno" Text="Cadastrar Alunos" OnClick="CadAluno_Click" />             
+                <asp:Button runat="server" CssClass="btns btn-primary" id="CadAluno" Text="Cadastrar Alunos" OnClick="CadAluno_Click" />             
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-3">
-                <asp:Button runat="server" CssClass="btns btn-success" id="CadProf" Text="Cadastrar Professor" OnClick="CadProf_Click"/>
+                <asp:Button runat="server" CssClass="btns btn-primary" id="CadProf" Text="Cadastrar Professor" OnClick="CadProf_Click"/>
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-3">
-                <asp:Button runat="server" CssClass="btns btn-success" id="CadPergunta" Text="Cadastrar Perguntas" OnClick="CadPergunta_Click" />
+                <asp:Button runat="server" CssClass="btns btn-primary" id="CadPergunta" Text="Cadastrar Perguntas" OnClick="CadPergunta_Click" />
             </div>
         </div>
 
