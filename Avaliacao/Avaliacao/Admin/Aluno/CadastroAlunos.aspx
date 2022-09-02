@@ -9,8 +9,8 @@
             </div>
         </div>
         <p>Nome:</p>
-        <asp:TextBox runat="server" ID="txtNome"></asp:TextBox>
+        <asp:TextBox runat="server" ID="txtNome" Width="204px"></asp:TextBox>
 
-        <asp:Button runat="server" ID="CadastrarAluno" CssClass="btn-success" Text="Cadastrar" OnClick="CadastrarAluno_Click" />
+        <asp:Button runat="server" ID="CadastrarAluno" CssClass="btn-success" Text="Cadastrar" OnClick="CadastrarAluno_Click" Width="117px" />
     </div>
 </asp:Content>

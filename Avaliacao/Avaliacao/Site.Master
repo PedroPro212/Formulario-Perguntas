@@ -38,7 +38,7 @@
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
                 <%--Site Scripts--%>
-            </Scripts>
+             </Scripts>
         </asp:ScriptManager>
 
         <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #1D3F40;">
