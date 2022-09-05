@@ -38,10 +38,10 @@
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
                 <%--Site Scripts--%>
-            </Scripts>
+             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #1D3F40;">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -49,21 +49,50 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/Admin/Login/LoginAdmin">Nome do aplicativo</a>
+                    <a class="navbar-brand" runat="server" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ <%--dps pode tirar, eu só ainda n sei o q fazer aq--%>">Perguntas e Tal</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/Admin/Login/LoginAdmin">Login Admin</a></li>
-                    </ul>
+                        <%--<li><a runat="server" href="~/Admin/Login/LoginAdmin">Login Admin</a></li>--%>
+                        
+                         <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Alunos
+                             <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu">
+                              <li><a                href="/Admin/Aluno/CadastroAlunos">Aluno Cadastro</a></li>
+                              <li><a runat="server" href="/Admin/Aluno/AtualizarAlunos.aspx">Aluno Update</a></li>
+                              <li><a                href="/Admin/Aluno/ExibirAlunos.aspx">Alunos Lista</a></li>
+
+                            </ul>
+
+                             <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Professores
+                             <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu">
+                              <li><a                href="/Admin/Aluno/AtualizarAlunos">Atualizar</a></li>
+                              <li><a runat="server" href="/Admin/Professor/CadastroProfessores">Cadastrar</a></li>
+                              <li><a runat="server" href="/Admin/Professor/ExibirProfessores">Exibir</a></li>
+
+                            </ul>
+                            <div style="width:800px"></div>
+                              <li> <a href="/Perguntas/Perguntas"><img src="/../../imgs/questions_24px.png" class="media-object  img-responsive" ></a></li>
+                              <li><a runat="server" href="/Admin/Login/LoginAdmin"><img src="/../../imgs/admin_settings_male_24px.png"  class="media-object  img-responsive" ></a></li>
+                                
+
+                        <%--balboa--%>
                 </div>
+                 
             </div>
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
+            <div style="margin-bottom:230px"></div>
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Pedro gay</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Avaliação</p>
             </footer>
         </div>
 
