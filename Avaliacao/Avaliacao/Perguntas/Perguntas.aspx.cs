@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,42 +10,77 @@ namespace Avaliacao.Perguntas
 {
     public partial class FrontEnd_Perguntas : System.Web.UI.Page
     {
+        private MySqlConnection connection = new MySqlConnection(SiteMaster.ConnectionString);
+        
+        int i = 0;
+
+        int[] ids = {0,0,0,0,0};
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            connection.Open();
+            Label[] lblperguntas = { lblPergunta1, lblPergunta2, lblPergunta3, lblPergunta4, lblPergunta5 };
+            var reader = new MySqlCommand("SELECT id FROM perguntas", connection).ExecuteReader();
+            while (reader.Read())
+            {
+                ids[i] = reader.GetInt32("id");
+                i++;
+            }
+            connection.Close();
 
+            if(!IsPostBack)
+            {
+                connection.Open();
+                ddlAluno.Items.Clear();
+                reader = new MySqlCommand("SELECT nome, id FROM alunos", connection).ExecuteReader();
+                while (reader.Read())
+                {
+                    var aluno = new ListItem(reader.GetString("nome"), reader.GetInt32("id").ToString());
+                    ddlAluno.Items.Add(aluno);
+                }
+                connection.Close();
+
+                connection.Open();
+                ddlCurso.Items.Clear();
+                reader = new MySqlCommand("SELECT descricao, id FROM cursos", connection).ExecuteReader();
+                while (reader.Read())
+                {
+                    var curso = new ListItem(reader.GetString("descricao"), reader.GetInt32("id").ToString());
+                    ddlCurso.Items.Add(curso);
+                }
+                connection.Close();
+
+                connection.Open();
+                var comando = new MySqlCommand($"SELECT descricao, id FROM perguntas WHERE (1=1) ", connection);
+                reader = comando.ExecuteReader();
+                i = 0;
+                while (reader.Read())
+                {
+                    lblperguntas[i].Text = $"{i+1}. {reader.GetString("descricao")}";
+                    ids[i] = reader.GetInt32("id");
+                    i++;
+                }
+                connection.Close();
+            }
         }
-
-
-        /// <summary>
-        /// Pega as informações armazenadas nos "Radio button(Atividades_ de 1 a 5)" e compara qual delas 
-        /// está selecionada para escrever na label "PedroGay"
-        /// </summary>
-        /// <param BUTAO_Click="sender"></param>
-        /// <param BUTAO_Click="e"></param>
         
-        // encontrar maneira de adaptar pro banco de dados
-        protected void BUTAO_Click(object sender, EventArgs e)
+        protected void BtnSubmit_Click(object sender, EventArgs e)
         {
-            if (Alternativa_1.Checked == true)
+            for (i=0; i<5; i++)
             {
-                lblResultado.Text = "Selecionou " + Alternativa_1.Text;
+                connection.Open();
+                RadioButtonList[] rdnperguntas = { rdnPergunta1, rdnPergunta2, rdnPergunta3, rdnPergunta4, rdnPergunta5 };
+                var comando = new MySqlCommand($"INSERT INTO `resultados`(`id_aluno`, `id_curso`, `id_pergunta`, `Resposta`) " +
+                    $"VALUES ('{ddlAluno.SelectedValue}','{ddlCurso.SelectedValue}','{ids[i]}','{rdnperguntas[i].SelectedValue}')",connection);
+                comando.ExecuteNonQuery();
+
+                rdnperguntas[i].ClearSelection();
+
+                connection.Close();
             }
-            else if (Alternativa_2.Checked)
-            {
-                lblResultado.Text = "escolheu " + Alternativa_2.Text;
-            }
-            else if (Alternativa_3.Checked)
-            {
-                lblResultado.Text = "clicou em " + Alternativa_3.Text;
-            }
-            else if (Alternativa_4.Checked)
-            {
-                lblResultado.Text = "Apertou " + Alternativa_4.Text;
-            }
-            else if (Alternativa_5.Checked)
-            {
-                lblResultado.Text = "bateu em " + Alternativa_5.Text;
-            }
+
+            ddlAluno.ClearSelection();
+            ddlCurso.ClearSelection();
         }
     }
 }
