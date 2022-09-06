@@ -1,24 +1,32 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ExibirProfessores.aspx.cs" Inherits="Avaliacao.Admin.Professor.ExibirProfessores" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <style>
-        body{
-            background-color:azure;
 
+   
+    <style>
+        body{background-color:azure;}
+        h2 {font-size:50PX;
+            color:white
         }
+
     </style>
+
+
+
 
     <div class="jumbotron" style="background-color:#65A1A6">
 
-         <h2 class="titulo text-center" style="font:tahoma">Exibir Professores</h2>
+         <h2 class="titulo text-center" style="font-family:Impact, fantasy"  >Exibir Professores</h2>
         <br>
          <hr>
         <br>
        
+<asp:TextBox runat="server" ID="txtNome" placeholder="Digite o professor para pesquisar" CssClass="form-control" Width="247px"></asp:TextBox>
 
-<asp:TextBox runat="server" ID="txtNome" placeholder="Digite o professor para pesquisar" Width="247px"></asp:TextBox>
+     <asp:Image runat="server" ID="Image1" src="/../../imgs/icons8_show_property_32.png" />
     <asp:Button runat="server" ID="PesquisarProf" Text="Pesquisar" OnClick="PesquisarProf_Click"/> 
-    <asp:Button runat="server" ID="CadastrarProf" Text="Cadastrar Novo Professor" OnClick="CadastrarProf_Click"/> 
+       
+    <asp:Button   runat="server" ID="CadastrarProf" Text="Cadastrar Novo Professor" OnClick="CadastrarProf_Click"/> 
         <br>
         <br>
         <hr>
