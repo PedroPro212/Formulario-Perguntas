@@ -49,7 +49,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ <%--dps pode tirar, eu só ainda n sei o q fazer aq--%>">Perguntas e Tal</a>
+                    <a class="navbar-brand" runat="server" href="~/Perguntas/Perguntas.aspx">Perguntas</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
