@@ -58,7 +58,7 @@
 
     
     <div style="padding-left: 30px">
-    <label  style="font-size:25px"> Nome:</label><asp:TextBox runat="server" ID="txtNome" CssClass="fodaseS"></asp:TextBox>
+    <label  style="font-size:25px"> Nome:</label><asp:TextBox runat="server" ID="txtNome" CssClass="fodase"></asp:TextBox>
 
     <label  style="font-size:25px"> Escolha uma turma:</label> <asp:DropDownList runat="server" ID="ddlTurma" CssClass="foda"></asp:DropDownList>
 
