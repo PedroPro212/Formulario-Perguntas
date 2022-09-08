@@ -25,8 +25,6 @@ namespace Avaliacao.Perguntas
         // encontrar maneira de adaptar pro banco de dados
         protected void BUTAO_Click(object sender, EventArgs e)
         {
-            SiteMaster.AlertPersonalizado(this, "Enviado com sucesso!");
-
             if (Alternativa_1.Checked == true)
             {
                 lblResultado.Text = "Selecionou " + Alternativa_1.Text;
