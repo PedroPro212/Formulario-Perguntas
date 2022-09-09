@@ -36,6 +36,7 @@ namespace Avaliacao.Admin.Perguntas
             {
                 if (new Negocio.Pergunta().Delete(perguntas[index].Id))
                     SiteMaster.AlertPersonalizado(this, "Pergunta excluída com sucesso!");
+
                 else
                     SiteMaster.AlertPersonalizado(this, "A pergunta não pode ser excluída pois está sendo usada! ");
                 PesquisarPergunta_Click(null, null);
