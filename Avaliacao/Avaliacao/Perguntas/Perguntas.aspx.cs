@@ -77,6 +77,8 @@ namespace Avaliacao.Perguntas
                 rdnperguntas[i].ClearSelection();
 
                 connection.Close();
+
+                SiteMaster.AlertPersonalizado(this, "Enviado com sucesso!");
             }
 
             ddlAluno.ClearSelection();

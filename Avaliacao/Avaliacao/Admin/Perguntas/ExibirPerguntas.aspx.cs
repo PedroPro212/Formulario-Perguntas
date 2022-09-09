@@ -34,7 +34,7 @@ namespace Avaliacao.Admin.Perguntas
 
             if (e.CommandName == "excluir")
             {
-                if (new Negocio.Professor().Delete(perguntas[index].Id))
+                if (new Negocio.Pergunta().Delete(perguntas[index].Id))
                     SiteMaster.AlertPersonalizado(this, "Pergunta excluída com sucesso!");
                 else
                     SiteMaster.AlertPersonalizado(this, "A pergunta não pode ser excluída pois está sendo usada! ");
