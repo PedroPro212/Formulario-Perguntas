@@ -298,6 +298,7 @@
     <Content Include="obj\Debug\Avaliacao.dll" />
     <Content Include="obj\Debug\Avaliacao.pdb" />
     <Content Include="Perguntas\Perguntas.aspx" />
+    <Content Include="Grafico\Graficoteste1.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -437,6 +438,13 @@
     </Compile>
     <Compile Include="Perguntas\Perguntas.aspx.designer.cs">
       <DependentUpon>Perguntas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Grafico\Graficoteste1.aspx.cs">
+      <DependentUpon>Graficoteste1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Grafico\Graficoteste1.aspx.designer.cs">
+      <DependentUpon>Graficoteste1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
