@@ -18,12 +18,23 @@ namespace Avaliacao.Grafico
             {
                 connection.Open();
                 ddlPerguntas.Items.Clear();
-                var reader = new MySqlCommand("SELECT descricao, id FROM perguntas", connection).ExecuteReader();
-                while (reader.Read())
+                var readero = new MySqlCommand("SELECT descricao, id FROM perguntas", connection).ExecuteReader();
+                while (readero.Read())
                 {
-                    var pergunta = new ListItem("Pergunta ID " + reader.GetInt32("id"), reader.GetInt32("id").ToString());
+                    var pergunta = new ListItem("Pergunta ID " + readero.GetInt32("id"), readero.GetInt32("id").ToString());
                     ddlPerguntas.Items.Add(pergunta);
                 }
+                connection.Close();
+            }
+            connection.Open();
+            TextBox[] resposta = { resposta1, resposta2, resposta3, resposta4, resposta5 };
+            connection.Close();
+            for (int i = 0; i < 5; i++)
+            {
+                connection.Open();
+                var reader = new MySqlCommand($"SELECT COUNT(Resposta) FROM `resultados` WHERE id_pergunta={ddlPerguntas.SelectedValue} AND Resposta={i+1}", connection).ExecuteReader();
+                if (reader.Read())
+                resposta[i].Text = reader.GetInt32("COUNT(Resposta)").ToString();
                 connection.Close();
             }
         }
