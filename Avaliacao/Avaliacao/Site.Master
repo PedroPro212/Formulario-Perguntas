@@ -10,6 +10,10 @@
     <title><%: Page.Title %> - Avaliação de professores</title>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yanone+Kaffeesatz&display=swap');
+    </style>
+
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -55,7 +59,7 @@
                     <ul class="nav navbar-nav">
                         <%--<li><a runat="server" href="~/Admin/Login/LoginAdmin">Login Admin</a></li>--%>
                         
-                         <li class="dropdown">
+                        <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Alunos
                              <span class="caret"></span></a>
 
@@ -66,22 +70,34 @@
 
                             </ul>
 
-                             <li class="dropdown">
+                        <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Professores
                              <span class="caret"></span></a>
-
+                            
                             <ul class="dropdown-menu">
                               <li><a                href="/Admin/Aluno/AtualizarAlunos">Atualizar</a></li>
                               <li><a runat="server" href="/Admin/Professor/CadastroProfessores">Cadastrar</a></li>
                               <li><a runat="server" href="/Admin/Professor/ExibirProfessores">Exibir</a></li>
 
                             </ul>
-                            <div style="width:800px"></div>
+
+                        <li class="dropdown" >
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Outros
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a runat="server" href="~/Admin/Login/SelecionarPagina.aspx">Home</a></li>
+                                <li><a runat="server" href="~/Grafico/Grafico.aspx">Gráfico</a></li>
+                            </ul>
+                        <li>
+                            <a><span></span></a>
+
+                            <div style="width:600px"></div>
                               <li> <a href="/Perguntas/Perguntas"><img src="/../../imgs/questions_24px.png" class="media-object  img-responsive" ></a></li>
                               <li><a runat="server" href="/Admin/Login/LoginAdmin"><img src="/../../imgs/admin_settings_male_24px.png"  class="media-object  img-responsive" ></a></li>
                                 
 
                         <%--balboa--%>
+                    </ul>
                 </div>
                  
             </div>
