@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Avaliacao</RootNamespace>
     <AssemblyName>Avaliacao</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
@@ -431,9 +431,7 @@
     <Compile Include="Negocio\Aluno.cs" />
     <Compile Include="Negocio\Pergunta.cs" />
     <Compile Include="Negocio\Professor.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+
     <Compile Include="Perguntas\Perguntas.aspx.cs">
       <DependentUpon>Perguntas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
