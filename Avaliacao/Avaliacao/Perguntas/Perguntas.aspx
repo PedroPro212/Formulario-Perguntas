@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Perguntas f.aspx.cs" Inherits="Avaliacao.Perguntas.FrontEnd_Perguntas" %>
+﻿x<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Perguntas f.aspx.cs" Inherits="Avaliacao.Perguntas.FrontEnd_Perguntas" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <link rel="stylesheet" href="login.css" />
     <div class="container">
@@ -9,7 +9,6 @@
             <asp:DropDownList runat="server" ID="ddlAluno" CssClass="dropdown dropend btn-sm"></asp:DropDownList>
             <asp:DropDownList runat="server" ID="ddlCurso" CssClass="dropdown dropstart btn-sm"></asp:DropDownList> <br /><br />
     
-
             <asp:Label runat="server" ID="lblPergunta1"></asp:Label>
             <asp:RadioButtonList runat="server" ID="rdnPergunta1" RepeatDirection="Horizontal">
                 <asp:ListItem Text="1" Value="1"></asp:ListItem>

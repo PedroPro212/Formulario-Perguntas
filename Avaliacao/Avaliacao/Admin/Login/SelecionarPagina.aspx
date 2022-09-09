@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <link rel="stylesheet" type="text/css" href="selecionartela.css" />
 
-    <div class="container" style="background-image:linear-gradient(to right, #386dbd, #009ddd); margin-top:50px; border-radius:1px; box-shadow: black 2px 2px 2px;">
+    <div class="container" style="background-image:linear-gradient(to right, #1D3F40, #009ddd); margin-top:50px; border-radius:1px; box-shadow: black 2px 2px 2px;">
         <div class="row">
             <div class="espaco " style="margin-top:15px;"></div>
             <div class="col-sm-4"></div>
