@@ -1,4 +1,4 @@
-using MySql.Data.MySqlClient;
+using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +36,7 @@ namespace Avaliacao.Perguntas
                 while (reader.Read())
                 {
                     var aluno = new ListItem(reader.GetString("nome"), reader.GetInt32("id").ToString());
-                    ddlAluno.Items.Add(aluno);
+                    ddlAluno.Items.Add(aluno); 
                 }
                 connection.Close();
 

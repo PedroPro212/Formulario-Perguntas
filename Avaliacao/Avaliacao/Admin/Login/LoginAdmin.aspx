@@ -3,6 +3,8 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yanone+Kaffeesatz&display=swap');
+
+        #txtLogin 
     </style>
 
 
@@ -16,9 +18,9 @@
                 <div style="margin-left:45px;">
                     <h2 class="titulo" style="padding-top:50px; margin-left:70px;font-family: 'Bebas Neue', cursive;">Fazer login</h2>
                     <div><p style="font-family: 'Yanone Kaffeesatz', sans-serif; font-size:20px; margin-bottom:0px;">Login:</p></div>
-                        <asp:TextBox runat="server" ID="txtLogin" CssClass="form-control" ></asp:TextBox><br />
+                        <asp:TextBox runat="server" ID="txtLogin" CssClass="form-control" onMouseOver="mDown(this)" onMouseOut="mUp(this)"></asp:TextBox><br />
                         <div><p style="font-family: 'Yanone Kaffeesatz', sans-serif; font-size:20px; margin-bottom:0px;">Senha:</p></div>
-                        <asp:TextBox runat="server" ID="txtSenha" CssClass="form-control" TextMode="Password"></asp:TextBox><br />
+                        <asp:TextBox runat="server" ID="txtSenha" CssClass="form-control" TextMode="Password" onMouseOver="mDown(this)" onMouseOut="mUp(this)"></asp:TextBox><br />
                         <div style="margin-bottom:15px;"></div>
                         <asp:Button runat="server" ID="btnLogin" Text="Fazer login" CssClass="btn btn-primary col-sm-12" OnClick="btnLogin_Click"/>
                     <div style="margin-bottom:80px;"></div>
@@ -26,4 +28,15 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function mDown(obj) {
+            obj.style.backgroundColor = "#fef7d5";
+            obj.style.width = "1000px";
+        }
+
+        function mUp(obj) {
+            obj.style.backgroundColor = "white";
+        }
+    </script>
 </asp:Content>
