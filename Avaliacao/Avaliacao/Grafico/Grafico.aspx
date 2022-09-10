@@ -1,15 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Grafico.aspx.cs" Inherits="Avaliacao.Grafico.Grafico" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    
-
     <br />
     <div style="visibility:hidden">
-        <asp:TextBox runat="server" ID="resposta1" Text="5"></asp:TextBox>
-        <asp:TextBox runat="server" ID="resposta2" Text="3"></asp:TextBox>
-        <asp:TextBox runat="server" ID="resposta3" Text="6"></asp:TextBox>
-        <asp:TextBox runat="server" ID="resposta4" Text="8"></asp:TextBox>
-        <asp:Textbox runat="server" ID="resposta5" Text="9"></asp:Textbox>
+        <asp:TextBox runat="server" ID="resposta1"></asp:TextBox>
+        <asp:TextBox runat="server" ID="resposta2"></asp:TextBox>
+        <asp:TextBox runat="server" ID="resposta3"></asp:TextBox>
+        <asp:TextBox runat="server" ID="resposta4"></asp:TextBox>
+        <asp:Textbox runat="server" ID="resposta5"></asp:Textbox>
     </div>
 
     <asp:DropDownList ID="ddlPerguntas" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlPerguntas_SelectedIndexChanged"></asp:DropDownList>        
