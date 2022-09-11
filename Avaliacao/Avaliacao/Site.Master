@@ -93,7 +93,7 @@
 
                             <div style="width:600px"></div>
                               <li> <a href="/Perguntas/Perguntas"><img src="/../../imgs/questions_24px.png" class="media-object  img-responsive" ></a></li>
-                              <li><a runat="server" href="/Admin/Login/LoginAdmin"><img src="/../../imgs/admin_settings_male_24px.png"  class="media-object  img-responsive" ></a></li>
+                              <li><a runat="server" href="~/Perguntas/Perguntas.aspx"><img src="/../../imgs/sair.png"  class="media-object  img-responsive" width="24" ></a></li>
                                 
 
                         <%--balboa--%>
