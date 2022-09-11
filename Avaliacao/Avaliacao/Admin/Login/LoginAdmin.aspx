@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LoginAdmin.aspx.cs" Inherits="Avaliacao._Default" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Mobile.Master" AutoEventWireup="true" CodeBehind="LoginAdmin.aspx.cs" Inherits="Avaliacao._Default" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <style>
@@ -8,7 +8,7 @@
 
     <div class="container">
         <div class="box">
-            <div class="col-sm-8" style="background-image:linear-gradient(to top, #00a9d4, #386dbd); margin-top:50px;">
+            <div class="col-sm-8" style="background-image:linear-gradient(to top, #1D3F40, #009ddd); margin-top:50px;">
                 <img runat="server" id="imgLogin" src="../../imgs/user.png" width="360" style="margin-left:150px;" />
             </div>
 
