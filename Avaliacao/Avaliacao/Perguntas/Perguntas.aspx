@@ -1,22 +1,62 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Perguntas.aspx.cs" Inherits="Avaliacao.Perguntas.FrontEnd_Perguntas" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Mobile.Master" AutoEventWireup="true" CodeBehind="Perguntas f.aspx.cs" Inherits="Avaliacao.Perguntas.FrontEnd_Perguntas" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-     <link rel="stylesheet" href="login.css" />
-    <div class="jumbotron">
+    <link rel="stylesheet" href="login.css" />
+    <div class="container">
+        <h2 style="font-size:45px; font-family: 'Bebas Neue', cursive;" class="text-center">Pesquisa de Satisfação</h2><br>
 
-        <h1 style="font-size:50px;">Perguntas Titulo</h1><br>
+        <div class="col-sm-5"></div>
+        <div class="col-sm-3">
+            <asp:DropDownList runat="server" ID="ddlAluno" CssClass="dropdown dropend btn-sm"></asp:DropDownList>
+            <asp:DropDownList runat="server" ID="ddlCurso" CssClass="dropdown dropstart btn-sm"></asp:DropDownList> <br /><br />
     
-        <p>1)Perguntas enunciado(isso é só um exemplo e deve ser alterado dps)</p>
-        
-        <asp:RadioButton id="Alternativa_1" Text="  ☜(ﾟヮﾟ☜) " Checked="True" GroupName="RadioGroup1" runat="server" />
-        <asp:RadioButton id="Alternativa_2" Text="  (¬_¬ )  " Checked="True" GroupName="RadioGroup1" runat="server" />
-        <asp:RadioButton id="Alternativa_3" Text="  (T_T)   " Checked="True" GroupName="RadioGroup1" runat="server" />
-        <asp:RadioButton id="Alternativa_4" Text="  (╯°□°）╯︵ ┻━┻    " Checked="True" GroupName="RadioGroup1" runat="server" />
-        <asp:RadioButton id="Alternativa_5" Text="  ಥ_ಥ " Checked="True" GroupName="RadioGroup1" runat="server" /><br>
+            <asp:Label runat="server" ID="lblPergunta1"></asp:Label>
+            <asp:RadioButtonList runat="server" ID="rdnPergunta1" RepeatDirection="Horizontal">
+                <asp:ListItem Text="1" Value="1"></asp:ListItem>
+                <asp:ListItem Text="2" Value="2"></asp:ListItem>
+                <asp:ListItem Text="3" Value="3"></asp:ListItem>
+                <asp:ListItem Text="4" Value="4"></asp:ListItem>
+                <asp:ListItem Text="5" Value="5"></asp:ListItem>
+            </asp:RadioButtonList>
 
-        <asp:Label ID="lblResultado" runat="server" Text="uiui"/><br>
+            <asp:Label runat="server" ID="lblPergunta2"></asp:Label>
+            <asp:RadioButtonList runat="server" ID="rdnPergunta2" RepeatDirection="Horizontal">
+                <asp:ListItem Text="1" Value="1"></asp:ListItem>
+                <asp:ListItem Text="2" Value="2"></asp:ListItem>
+                <asp:ListItem Text="3" Value="3"></asp:ListItem>
+                <asp:ListItem Text="4" Value="4"></asp:ListItem>
+                <asp:ListItem Text="5" Value="5"></asp:ListItem>
+            </asp:RadioButtonList>
 
-        <asp:Button  ID="BUTAO" Text="submit" runat="server" OnClick="BUTAO_Click"/>
-       
+            <asp:Label runat="server" ID="lblPergunta3"></asp:Label>
+            <asp:RadioButtonList runat="server" ID="rdnPergunta3" RepeatDirection="Horizontal">
+                <asp:ListItem Text="1" Value="1"></asp:ListItem>
+                <asp:ListItem Text="2" Value="2"></asp:ListItem>
+                <asp:ListItem Text="3" Value="3"></asp:ListItem>
+                <asp:ListItem Text="4" Value="4"></asp:ListItem>
+                <asp:ListItem Text="5" Value="5"></asp:ListItem>
+            </asp:RadioButtonList>
+
+            <asp:Label runat="server" ID="lblPergunta4"></asp:Label>
+            <asp:RadioButtonList runat="server" ID="rdnPergunta4" RepeatDirection="Horizontal">
+                <asp:ListItem Text="1" Value="1"></asp:ListItem>
+                <asp:ListItem Text="2" Value="2"></asp:ListItem>
+                <asp:ListItem Text="3" Value="3"></asp:ListItem>
+                <asp:ListItem Text="4" Value="4"></asp:ListItem>
+                <asp:ListItem Text="5" Value="5"></asp:ListItem>
+            </asp:RadioButtonList>
+
+            <asp:Label runat="server" ID="lblPergunta5"></asp:Label>
+            <asp:RadioButtonList runat="server" ID="rdnPergunta5" RepeatDirection="Horizontal">
+                <asp:ListItem Text="1" Value="1"></asp:ListItem>
+                <asp:ListItem Text="2" Value="2"></asp:ListItem>
+                <asp:ListItem Text="3" Value="3"></asp:ListItem>
+                <asp:ListItem Text="4" Value="4"></asp:ListItem>
+                <asp:ListItem Text="5" Value="5"></asp:ListItem>
+            </asp:RadioButtonList>
+
+            <asp:Button  ID="BtnSubmit" Text="Enviar" runat="server" OnClick="BtnSubmit_Click" CssClass="btn-success form-control" Width="150px"/>
+       </div>
+        <div class="col-sm-4"></div>
     </div>
 
 
