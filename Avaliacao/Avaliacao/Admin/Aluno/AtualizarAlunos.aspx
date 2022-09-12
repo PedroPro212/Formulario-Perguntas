@@ -64,6 +64,10 @@
 
     <asp:Button runat="server" CssClass="button" ID="AtualizarAluno" Text="Atualizar" OnClick="AtualizarAluno_Click"/>
 
+        <%--...--%>
+        <asp:button runat="server" CssClass="button" ID="presença" Text="c mc m" OnClick="presença_Click"/>
+        <%--...--%>
+
         <br>
         <br>
         <hr>
