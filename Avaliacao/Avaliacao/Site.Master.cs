@@ -18,11 +18,7 @@ namespace Avaliacao
 
         public static void ExibirAlert(Page page, string mensagem)
         {
-            page.ClientScript.RegisterStartupScript(
-                 page.GetType(),
-                 "MessageBox" + Guid.NewGuid(),
-                 "<script language='javascript'> alert('" + mensagem + "');</script>"
-              );
+            
         }
         public static void ExibirAlert(Page page, string mensagem, string pagina)
         {
