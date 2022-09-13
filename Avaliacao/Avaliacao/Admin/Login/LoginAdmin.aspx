@@ -25,6 +25,9 @@
                 </div>
             </div>
         </div>
+        <div class="col-sm-12 text-right">
+            <h5>É necessário fazer login para ter acesso a prataforma de administração</h5>
+        </div>
     </div>
 
     <script>
