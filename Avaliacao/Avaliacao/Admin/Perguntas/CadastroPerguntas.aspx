@@ -5,6 +5,7 @@
 
     Enunciado da pergunta:<asp:TextBox runat="server" ID="txtPergunta" TextMode="MultiLine" CssClass="form-control" ></asp:TextBox> <br />
     <asp:Button runat="server" ID="CadastrarPergunta" Text="Cadastrar" OnClick="CadastrarPergunta_Click"/>
+    <h6>Escreva uma pergunta:</h6>
 
 
 </asp:Content>
