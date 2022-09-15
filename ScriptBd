@@ -1,0 +1,24 @@
+CREATE DATABASE pesquisa_satisfacao;
+USE pesquisa_satisfacao;
+CREATE TABLE professores ( id int PRIMARY key AUTO_INCREMENT, nome varchar(200) not null);
+CREATE TABLE alunos ( id int PRIMARY key AUTO_INCREMENT, nome varchar(200) not null);
+CREATE TABLE cursos ( id int PRIMARY key AUTO_INCREMENT, descricao varchar(200) not null);
+CREATE TABLE perguntas ( id int PRIMARY key AUTO_INCREMENT, descricao varchar(200) not null);
+CREATE TABLE resultados ( id int PRIMARY key AUTO_INCREMENT, 
+                        id_aluno int,
+                        FOREIGN KEY (id_aluno) REFERENCES alunos(id),
+                        id_curso int,
+                        FOREIGN KEY (id_curso) REFERENCES cursos(id),
+                        id_pergunta int,
+                        FOREIGN KEY (id_pergunta) REFERENCES perguntas(id),
+                        Resposta int);
+CREATE TABLE comentarios ( id int PRIMARY key AUTO_INCREMENT, 
+                        id_aluno int,
+                        FOREIGN KEY (id_aluno) REFERENCES alunos(id),
+                        id_curso int,
+                        FOREIGN KEY (id_curso) REFERENCES cursos(id),
+                        descricao text);            
+INSERT INTO `alunos`(`nome`) VALUES ('An�nimo'),('Jo�o'),('Maria'),('Pedro'),('Sunda');
+INSERT INTO `cursos`(`descricao`) VALUES ('Desenvolvimento de Sistemas'),('Mec�nica'),('Eletr�nica'),('Seguran�a do Trabalho'),('Mecatr�nica');
+INSERT INTO `professores`(`nome`) VALUES ('Felipe'),('Patrick'),('Luiz'),('Antonio');
+INSERT INTO `perguntas`(`descricao`) VALUES ('Voc� est� gostando do curso?'),('Voc� est� conseguindo realizar as atividades propostas?'),('Seu professor te auxilia bem nas atividades?'),('Em sua sala h� respeito entre os alunos e professor?'),('Os procedimentos e/ou atividades s�o bem explicados?');
