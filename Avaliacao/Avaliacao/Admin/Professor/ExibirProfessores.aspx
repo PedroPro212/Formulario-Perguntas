@@ -35,7 +35,7 @@
         .fodase {
             padding: 15px 32px;
             min-width: 600px;
-            }
+        }
     </style>
 
 
@@ -49,38 +49,35 @@
         <br>
         <hr>
         <br>
-        
+
         <div style="padding-left: 100px">
-            <asp:TextBox runat="server" ID="txtNome" CssClass="fodase" placeholder="Digite o professor para pesquisar" Width="690px" ></asp:TextBox>
+            <asp:TextBox runat="server" ID="txtNome" CssClass="fodase" placeholder="Digite o professor para pesquisar" Width="690px"></asp:TextBox>
 
-        <asp:Button runat="server" ID="PesquisarProf" Text="Pesquisar" CssClass="button" OnClick="PesquisarProf_Click" />
-            
-        <br />
-        <br />  
+            <asp:Button runat="server" ID="PesquisarProf" Text="Pesquisar" CssClass="button" OnClick="PesquisarProf_Click" />
 
-        <asp:Button runat="server" ID="CadastrarProf" CssClass="button" Text="Cadastrar Novo Professor" OnClick="CadastrarProf_Click" />
+            <br />
+            <br />
+
+            <asp:Button runat="server" ID="CadastrarProf" CssClass="button" Text="Cadastrar Novo Professor" OnClick="CadastrarProf_Click" />
         </div>
 
-       
         <br>
         <br>
         <hr>
 
-        <asp:GridView runat="server" ID="grdProf" Width="100%" AutoGenerateColumns="false" OnRowCommand="grdProf_RowCommand">
-            <Columns>
-                <asp:BoundField DataField="nome" HeaderText="NOME" />
-                <asp:ButtonField ButtonType="Link" CommandName="editar" ControlStyle-CssClass="btn btn-warning" Text="Editar" />
-                <asp:ButtonField ButtonType="Link" CommandName="excluir" ControlStyle-CssClass="btn btn-danger" Text="Excluir" />
-            </Columns>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-5">
 
-        </asp:GridView>
+            <asp:GridView runat="server" ID="grdProf" Width="100%" AutoGenerateColumns="false" OnRowCommand="grdProf_RowCommand">
+                <Columns>
+                    <asp:BoundField DataField="nome" HeaderText="NOME" />
+                    <asp:ButtonField ButtonType="Link" CommandName="editar" ControlStyle-CssClass="btn btn-warning" Text="Editar" />
+                    <asp:ButtonField ButtonType="Link" CommandName="excluir" ControlStyle-CssClass="btn btn-danger" Text="Excluir" />
+                </Columns>
 
-
-
-
-
+            </asp:GridView>
+        </div>
+        ]<div class="col-sm-3"></div>
     </div>
-
-
 
 </asp:Content>
