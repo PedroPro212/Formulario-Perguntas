@@ -13,6 +13,15 @@ namespace Avaliacao.Admin {
     public partial class CadastroAluno {
         
         /// <summary>
+        /// Controle Image1.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image1;
+        
+        /// <summary>
         /// Controle txtNome.
         /// </summary>
         /// <remarks>
