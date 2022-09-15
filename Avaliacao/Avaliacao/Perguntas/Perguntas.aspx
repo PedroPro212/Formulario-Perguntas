@@ -5,6 +5,7 @@
         <h2 style="font-size:45px; font-family: 'Bebas Neue', cursive;" class="text-center">Pesquisa de Satisfação</h2><br>
 
         <div class="col-sm-5"></div>
+        <div class="jumbotron">
         <div class="col-sm-3">
             <asp:DropDownList runat="server" ID="ddlAluno" CssClass="dropdown dropend btn-sm"></asp:DropDownList>
             <asp:DropDownList runat="server" ID="ddlCurso" CssClass="dropdown dropstart btn-sm"></asp:DropDownList> <br /><br />
@@ -56,6 +57,7 @@
 
             <asp:Button  ID="BtnSubmit" Text="Enviar" runat="server" OnClick="BtnSubmit_Click" CssClass="btn-success form-control" Width="150px"/>
        </div>
+            </div>
         <div class="col-sm-4"></div>
     </div>
 
