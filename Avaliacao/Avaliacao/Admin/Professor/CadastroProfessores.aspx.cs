@@ -16,12 +16,23 @@ namespace Avaliacao.Admin
 
         protected void CadastrarProfessor_Click(object sender, EventArgs e)
         {
-            var professor = new Classes.Professor();
-            professor.Nome = txtNome.Text;
-            new Negocio.Professor().Create(professor);
+            string x = txtNome.Text.Replace(" ", "");
 
-            SiteMaster.ExibirAlert(this, "Professor cadastrado com sucesso!");
-            txtNome.Text = "";
+            if (x == "")
+            {
+                SiteMaster.AlertPersonalizado(this, "O professor deve possuir um nome.");
+                txtNome.Text = "";
+            }
+
+            else
+            {
+                var professor = new Classes.Professor();
+                professor.Nome = txtNome.Text;
+                new Negocio.Professor().Create(professor);
+
+                SiteMaster.ExibirAlert(this, "Professor cadastrado com sucesso!");
+                txtNome.Text = "";
+            }
         }
     }
 }
