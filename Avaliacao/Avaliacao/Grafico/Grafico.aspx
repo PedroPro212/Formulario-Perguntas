@@ -12,7 +12,7 @@
         <asp:Textbox runat="server" ID="resposta5" Text="9"></asp:Textbox>
     </div>
 
-    <asp:DropDownList ID="ddlPerguntas" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlPerguntas_SelectedIndexChanged"></asp:DropDownList>        
+    <asp:DropDownList ID="ddlPerguntas" CssClass="btn-sm" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlPerguntas_SelectedIndexChanged"></asp:DropDownList>        
     
     <canvas id="myChart"></canvas>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

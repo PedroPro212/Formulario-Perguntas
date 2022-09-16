@@ -1,4 +1,4 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Mobile.master.cs" Inherits="Avaliacao.Site_Mobile" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Mobile.master.cs" Inherits="Avaliacao.Site_Mobile" %>
 <%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
 
 <!DOCTYPE html>
@@ -79,7 +79,7 @@
             <hr />
             <div style="margin-bottom:230px"></div>
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Avaliação</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Avaliacao</p>
             </footer>
         </div>
 
