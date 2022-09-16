@@ -64,9 +64,9 @@
                              <span class="caret"></span></a>
 
                             <ul class="dropdown-menu">
-                              <li><a                href="/Admin/Aluno/CadastroAlunos">Aluno Cadastro</a></li>
-                              <li><a runat="server" href="/Admin/Aluno/AtualizarAlunos.aspx">Aluno Update</a></li>
-                              <li><a                href="/Admin/Aluno/ExibirAlunos.aspx">Alunos Lista</a></li>
+                              <li><a                href="Admin/Aluno/AtualizarAlunos.aspx">Atualizar</a></li>
+                              <li><a runat="server" href="~/Admin/Aluno/CadastroAlunos.aspx">Cadastrar</a></li>
+                              <li><a                href="Admin/Aluno/ExibirAlunos.aspx">Exibir</a></li>
 
                             </ul>
 
@@ -113,5 +113,23 @@
         </div>
 
     </form>
+
+    <script>
+        $(function () {
+            timeout = setTimeout(function () {
+                window.location.href = "/Perguntas/Perguntas.aspx";
+            }, 60000);
+        });
+
+        $(document).on('mousemove', function () {
+            if (timeout !== null) {
+                clearTimeout(timeout);
+            }
+            timeout = setTimeout(function () {
+                window.location.href = "/Perguntas/Perguntas.aspx";
+            }, 60000);
+        });
+    </script>
+
 </body>
 </html>

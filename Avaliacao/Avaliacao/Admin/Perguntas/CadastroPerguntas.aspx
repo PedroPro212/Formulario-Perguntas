@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CadastroPerguntas.aspx.cs" Inherits="Avaliacao.Admin.WebForm2" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    
+
     <style>
         body {
             background-color: azure;
@@ -10,7 +11,10 @@
             font-size: 50PX;
             color: white
         }
-        .branco{color: white}
+
+        .branco {
+            color: white
+        }
 
         .button {
             background-color: white;
@@ -37,29 +41,30 @@
         .fodase {
             padding: 15px 32px;
             min-width: 850px;
-            }
-
-        .textinho 
-        {
-        padding: 15px 32px;
         }
 
+        .textinho {
+            padding: 15px 32px;
+        }
     </style>
 
 
     <div class="jumbotron" style="background-color: #65A1A6">
-<div> <h2 class="titulo text-center" style="font-family: Impact, fantasy">Cadastro de Perguntas
-         <asp:Image runat="server" ID="Image1" src="/../../imgs/icons8_customer_insight_48.png" /></h2></div>
-   
+        <div>
+            <h2 class="titulo text-center" style="font-family: Impact, fantasy">Cadastro de Perguntas
+         <asp:Image runat="server" ID="Image1" src="/../../imgs/icons8_customer_insight_48.png" /></h2>
+        </div>
+
         <br>
         <br>
         <hr>
         <br>
         <%--jooj--%>
-  
-        <label  style="font-size:25px"> Enunciado da pergunta:</label>
-   <asp:TextBox runat="server" ID="txtPergunta" TextMode="MultiLine" CssClass="fodase" ></asp:TextBox> <br />
-    <asp:Button CssClass="button" runat="server" ID="CadastrarPergunta" Text="Cadastrar" OnClick="CadastrarPergunta_Click"/>
 
-        </div>
+        <label style="font-size: 25px">Enunciado da pergunta:</label>
+        <asp:TextBox runat="server" ID="txtPergunta" TextMode="MultiLine" CssClass="fodase"></asp:TextBox>
+        <br />
+        <asp:Button CssClass="button" runat="server" ID="CadastrarPergunta" Text="Cadastrar" OnClick="CadastrarPergunta_Click" />
+
+    </div>
 </asp:Content>
