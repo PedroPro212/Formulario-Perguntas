@@ -30,9 +30,10 @@
 
     <div class="jumbotron" style="background-color: #65A1A6"><br />
 
-        <h2 style="font-size: 45px; font-family: 'Bebas Neue', cursive;" class="text-center">Pesquisa de Perguntas  </h2>
+        <h2 style="font-size: 45px; font-family: 'Bebas Neue', cursive;" class="text-center">Pesquisa de Perguntas <asp:Image runat="server" ID="Image1" src="/../../imgs/icons8_Search_48.png" /> </h2>
+        
          <br /><br /><hr><br />
-
+       
     <asp:TextBox runat="server" ID="txtPergunta" CssClass="fodase" placeholder="Digite a pergunta para pesquisar"></asp:TextBox>
     <asp:Button runat="server" ID="PesquisarPergunta" CssClass="button" Text="Pesquisar" OnClick="PesquisarPergunta_Click"/> 
     <asp:Button runat="server" ID="CadastrarPergunta" CssClass="button" Text="Cadastrar Nova Pergunta" OnClick="CadastrarPergunta_Click"/> 
