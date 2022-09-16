@@ -113,5 +113,23 @@
         </div>
 
     </form>
+
+    <script>
+        $(function () {
+            timeout = setTimeout(function () {
+                window.location.href = "/Perguntas/Perguntas.aspx";
+            }, 60000);
+        });
+
+        $(document).on('mousemove', function () {
+            if (timeout !== null) {
+                clearTimeout(timeout);
+            }
+            timeout = setTimeout(function () {
+                window.location.href = "/Perguntas/Perguntas.aspx";
+            }, 60000);
+        });
+    </script>
+
 </body>
 </html>
