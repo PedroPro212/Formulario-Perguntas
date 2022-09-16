@@ -12,52 +12,6 @@
             <asp:DropDownList runat="server" ID="ddlCurso" CssClass="dropdown dropstart btn-sm"></asp:DropDownList>
             <br />
             <br />
-
-            <!--<asp:Label runat="server" ID="lblPergunta1"></asp:Label>
-            <asp:RadioButtonList runat="server" ID="rdnPergunta1" RepeatDirection="Horizontal">
-                <asp:ListItem Text="1" Value="1"></asp:ListItem>
-                <asp:ListItem Text="2" Value="2"></asp:ListItem>
-                <asp:ListItem Text="3" Value="3"></asp:ListItem>
-                <asp:ListItem Text="4" Value="4"></asp:ListItem>
-                <asp:ListItem Text="5" Value="5"></asp:ListItem>
-            </asp:RadioButtonList>
-
-            <asp:Label runat="server" ID="lblPergunta2"></asp:Label>
-            <asp:RadioButtonList runat="server" ID="rdnPergunta2" RepeatDirection="Horizontal">
-                <asp:ListItem Text="1" Value="1"></asp:ListItem>
-                <asp:ListItem Text="2" Value="2"></asp:ListItem>
-                <asp:ListItem Text="3" Value="3"></asp:ListItem>
-                <asp:ListItem Text="4" Value="4"></asp:ListItem>
-                <asp:ListItem Text="5" Value="5"></asp:ListItem>
-            </asp:RadioButtonList>
-
-            <asp:Label runat="server" ID="lblPergunta3"></asp:Label>
-            <asp:RadioButtonList runat="server" ID="rdnPergunta3" RepeatDirection="Horizontal">
-                <asp:ListItem Text="1" Value="1"></asp:ListItem>
-                <asp:ListItem Text="2" Value="2"></asp:ListItem>
-                <asp:ListItem Text="3" Value="3"></asp:ListItem>
-                <asp:ListItem Text="4" Value="4"></asp:ListItem>
-                <asp:ListItem Text="5" Value="5"></asp:ListItem>
-            </asp:RadioButtonList>
-
-            <asp:Label runat="server" ID="lblPergunta4"></asp:Label>
-            <asp:RadioButtonList runat="server" ID="rdnPergunta4" RepeatDirection="Horizontal">
-                <asp:ListItem Text="1" Value="1"></asp:ListItem>
-                <asp:ListItem Text="2" Value="2"></asp:ListItem>
-                <asp:ListItem Text="3" Value="3"></asp:ListItem>
-                <asp:ListItem Text="4" Value="4"></asp:ListItem>
-                <asp:ListItem Text="5" Value="5"></asp:ListItem>
-            </asp:RadioButtonList>
-
-            <asp:Label runat="server" ID="lblPergunta5"></asp:Label>
-            <asp:RadioButtonList runat="server" ID="rdnPergunta5" RepeatDirection="Horizontal">
-                <asp:ListItem Text="1" Value="1"></asp:ListItem>
-                <asp:ListItem Text="2" Value="2"></asp:ListItem>
-                <asp:ListItem Text="3" Value="3"></asp:ListItem>
-                <asp:ListItem Text="4" Value="4"></asp:ListItem>
-                <asp:ListItem Text="5" Value="5"></asp:ListItem>
-            </asp:RadioButtonList>-->
-
             <asp:Panel runat="server" ID="lblTeste"></asp:Panel>
             <asp:Button ID="BtnSubmit" Text="Enviar" runat="server" OnClick="BtnSubmit_Click" CssClass="btn-success form-control" Width="150px" />
         </div>

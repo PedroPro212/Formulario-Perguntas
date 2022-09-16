@@ -81,7 +81,8 @@ namespace Avaliacao.Perguntas
                 connection.Close();
             }
 
-            SiteMaster.AlertPersonalizado(this, "Enviado com sucesso!", "Perguntas.aspx");
+            Response.Redirect("Perguntas.aspx");
+            SiteMaster.AlertPersonalizado(this, "Enviado com sucesso!");
         }
     }
 }
