@@ -16,12 +16,24 @@ namespace Avaliacao.Admin
 
         protected void CadastrarAluno_Click(object sender, EventArgs e)
         {
-            var aluno = new Classes.Aluno();
-            aluno.Nome = txtNome.Text;
-            new Negocio.Aluno().Create(aluno);
+            string x = txtNome.Text.Replace(" ","");
 
-            SiteMaster.AlertPersonalizado(this, "Aluno cadastrado com sucesso.");
-            txtNome.Text = "";
+            if(x=="")
+            {
+                SiteMaster.AlertPersonalizado(this, "O aluno deve possuir um nome.");
+                txtNome.Text = "";
+            }
+                
+            else
+            {
+                var aluno = new Classes.Aluno();
+                aluno.Nome = txtNome.Text;
+                new Negocio.Aluno().Create(aluno);
+
+                SiteMaster.AlertPersonalizado(this, "Aluno cadastrado com sucesso.");
+                txtNome.Text = "";
+            }
+                
         }
     }
 }
