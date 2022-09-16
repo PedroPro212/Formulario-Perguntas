@@ -16,8 +16,6 @@
             box-shadow:black 2px 2px 2px;
         }
 
-        
-
     </style>
 
     <div class="container">
