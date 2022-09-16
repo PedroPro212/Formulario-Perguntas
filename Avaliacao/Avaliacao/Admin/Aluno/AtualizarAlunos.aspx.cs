@@ -18,5 +18,10 @@ namespace Avaliacao.Admin.Aluno
         {
 
         }
+
+        protected void presença_Click(object sender, EventArgs e)
+        {
+            SiteMaster.AlertPersonalizado(this,"prëzëncsä");
+        }
     }
 }
