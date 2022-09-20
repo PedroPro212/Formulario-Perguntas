@@ -160,6 +160,7 @@
     <Content Include="Admin\Aluno\ExibirAlunos.aspx" />
     <Content Include="Admin\Cursos\CadastroCursos.aspx" />
     <Content Include="Admin\Cursos\ExibirCursos.aspx" />
+    <Content Include="Admin\Cursos\LinkarAlunoCurso.aspx" />
     <Content Include="Admin\Cursos\LinkarProfCurso.aspx" />
     <Content Include="Admin\Login\login.css" />
     <Content Include="Admin\Login\SelecionarPagina.aspx" />
@@ -376,6 +377,13 @@
     </Compile>
     <Compile Include="Admin\Cursos\ExibirCursos.aspx.designer.cs">
       <DependentUpon>ExibirCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Cursos\LinkarAlunoCurso.aspx.cs">
+      <DependentUpon>LinkarAlunoCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Cursos\LinkarAlunoCurso.aspx.designer.cs">
+      <DependentUpon>LinkarAlunoCurso.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Cursos\LinkarProfCurso.aspx.cs">
       <DependentUpon>LinkarProfCurso.aspx</DependentUpon>

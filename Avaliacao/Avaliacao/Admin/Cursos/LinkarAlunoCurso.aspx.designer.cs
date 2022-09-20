@@ -7,10 +7,10 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace Avaliacao.Perguntas {
+namespace Avaliacao.Admin.Cursos {
     
     
-    public partial class FrontEnd_Perguntas {
+    public partial class LinkarAlunoCurso {
         
         /// <summary>
         /// Controle ddlAluno.
@@ -31,21 +31,12 @@ namespace Avaliacao.Perguntas {
         protected global::System.Web.UI.WebControls.DropDownList ddlCurso;
         
         /// <summary>
-        /// Controle lblTeste.
+        /// Controle AtribuirAlunoCurso.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel lblTeste;
-        
-        /// <summary>
-        /// Controle BtnSubmit.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSubmit;
+        protected global::System.Web.UI.WebControls.Button AtribuirAlunoCurso;
     }
 }
