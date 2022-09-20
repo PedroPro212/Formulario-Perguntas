@@ -11,7 +11,10 @@ namespace Avaliacao.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["CAVALO"] == null)
+            {
+                Response.Redirect("LoginAdmin.aspx");
+            }
         }
 
         protected void CadastrarAluno_Click(object sender, EventArgs e)

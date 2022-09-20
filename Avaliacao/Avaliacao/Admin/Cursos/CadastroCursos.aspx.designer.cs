@@ -7,18 +7,27 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace Avaliacao {
+namespace Avaliacao.Admin.Cursos {
     
     
-    public partial class SiteMaster {
+    public partial class CadastroCursos {
         
         /// <summary>
-        /// Controle MainContent.
+        /// Controle txtCurso.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.TextBox txtCurso;
+        
+        /// <summary>
+        /// Controle CadastrarCurso.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CadastrarCurso;
     }
 }
