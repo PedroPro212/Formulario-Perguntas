@@ -3,6 +3,17 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yanone+Kaffeesatz&display=swap');
+
+        .botao{
+            box-shadow(black 2px 2px 2px);
+        }
+        .botao:hover{
+            font-size:20px;
+            box-shadow:black 1px 1px 1px;
+            border-radius:5px;
+            transition:font-size 0.1s;
+            transition:border-radius 0.1s;
+        }
     </style>
 
 
@@ -20,7 +31,7 @@
                         <div><p style="font-family: 'Yanone Kaffeesatz', sans-serif; font-size:20px; margin-bottom:0px;">Senha:</p></div>
                         <asp:TextBox runat="server" ID="txtSenha" CssClass="form-control" TextMode="Password" onMouseOver="mDown(this)" onMouseOut="mUp(this)"></asp:TextBox><br />
                         <div style="margin-bottom:15px;"></div>
-                        <asp:Button runat="server" ID="btnLogin" Text="Fazer login" CssClass="btn btn-primary col-sm-12" OnClick="btnLogin_Click"/>
+                        <asp:Button runat="server" ID="btnLogin" Text="Fazer login" CssClass="botao btn btn-primary col-sm-12" OnClick="btnLogin_Click"/>
                     <div style="margin-bottom:80px;"></div>
                 </div>
             </div>

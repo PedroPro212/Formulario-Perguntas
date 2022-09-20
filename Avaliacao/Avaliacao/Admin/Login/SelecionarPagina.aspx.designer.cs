@@ -24,24 +24,6 @@ namespace Avaliacao.Admin.Login
         protected global::System.Web.UI.WebControls.Button CadAluno;
 
         /// <summary>
-        /// Controle CadProf.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CadProf;
-
-        /// <summary>
-        /// Controle CadPergunta.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CadPergunta;
-
-        /// <summary>
         /// Controle ExibAluno.
         /// </summary>
         /// <remarks>
@@ -49,6 +31,15 @@ namespace Avaliacao.Admin.Login
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ExibAluno;
+
+        /// <summary>
+        /// Controle CadProf.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CadProf;
 
         /// <summary>
         /// Controle ExibProf.
@@ -60,6 +51,15 @@ namespace Avaliacao.Admin.Login
         protected global::System.Web.UI.WebControls.Button ExibProf;
 
         /// <summary>
+        /// Controle CadPergunta.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CadPergunta;
+
+        /// <summary>
         /// Controle ExibPergunta.
         /// </summary>
         /// <remarks>
@@ -67,5 +67,32 @@ namespace Avaliacao.Admin.Login
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ExibPergunta;
+
+        /// <summary>
+        /// Controle Button1.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
+
+        /// <summary>
+        /// Controle ExibirCursos.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ExibirCursos;
+
+        /// <summary>
+        /// Controle btnLinkar.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnLinkar;
     }
 }

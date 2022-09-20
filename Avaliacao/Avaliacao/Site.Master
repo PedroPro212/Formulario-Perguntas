@@ -118,7 +118,7 @@
         $(function () {
             timeout = setTimeout(function () {
                 window.location.href = "/Perguntas/Perguntas.aspx";
-            }, 60000);
+            }, 600000);
         });
 
         $(document).on('mousemove', function () {
@@ -127,7 +127,7 @@
             }
             timeout = setTimeout(function () {
                 window.location.href = "/Perguntas/Perguntas.aspx";
-            }, 60000);
+            }, 600000);
         });
     </script>
 
