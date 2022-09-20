@@ -7,54 +7,45 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace Avaliacao.Admin.Aluno {
+namespace Avaliacao.Admin.Cursos {
     
     
-    public partial class ExibirAlunos {
+    public partial class WebForm1 {
         
         /// <summary>
-        /// Controle Image1.
+        /// Controle txtCurso.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.TextBox txtCurso;
         
         /// <summary>
-        /// Controle txtNome.
+        /// Controle PesquisarCurso.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNome;
+        protected global::System.Web.UI.WebControls.Button PesquisarCurso;
         
         /// <summary>
-        /// Controle PesquisarAluno.
+        /// Controle CadastrarCurso.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button PesquisarAluno;
+        protected global::System.Web.UI.WebControls.Button CadastrarCurso;
         
         /// <summary>
-        /// Controle CadastrarAluno.
+        /// Controle grdCursos.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CadastrarAluno;
-        
-        /// <summary>
-        /// Controle grdAlunos.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdAlunos;
+        protected global::System.Web.UI.WebControls.GridView grdCursos;
     }
 }

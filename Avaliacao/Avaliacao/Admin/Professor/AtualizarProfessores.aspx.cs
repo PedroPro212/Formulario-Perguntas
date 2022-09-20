@@ -11,7 +11,10 @@ namespace Avaliacao.Admin.Perguntas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["CAVALO"] == null)
+            {
+                Response.Redirect("../Login/LoginAdmin.aspx");
+            }
         }
 
         protected void AtualizarProfessor_Click(object sender, EventArgs e)

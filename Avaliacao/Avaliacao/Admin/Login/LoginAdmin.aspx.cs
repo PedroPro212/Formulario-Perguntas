@@ -21,6 +21,7 @@ namespace Avaliacao
         { 
             if ((txtLogin.Text == login)&&(txtSenha.Text==senha))
             {
+                Session["CAVALO"] = true;
                 Response.Redirect("SelecionarPagina.aspx");
             }
             else

@@ -158,6 +158,8 @@
     <Content Include="Admin\Aluno\Estilos\CadastarAluno.css" />
     <Content Include="Admin\Aluno\Estilos\exibir.css" />
     <Content Include="Admin\Aluno\ExibirAlunos.aspx" />
+    <Content Include="Admin\Cursos\CadastroCursos.aspx" />
+    <Content Include="Admin\Cursos\ExibirCursos.aspx" />
     <Content Include="Admin\Login\login.css" />
     <Content Include="Admin\Login\SelecionarPagina.aspx" />
     <Content Include="Admin\Login\selecionartela.css" />
@@ -360,6 +362,20 @@
     <Compile Include="Admin\Aluno\ExibirAlunos.aspx.designer.cs">
       <DependentUpon>ExibirAlunos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Cursos\CadastroCursos.aspx.cs">
+      <DependentUpon>CadastroCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Cursos\CadastroCursos.aspx.designer.cs">
+      <DependentUpon>CadastroCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Cursos\ExibirCursos.aspx.cs">
+      <DependentUpon>ExibirCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Cursos\ExibirCursos.aspx.designer.cs">
+      <DependentUpon>ExibirCursos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Login\SelecionarPagina.aspx.cs">
       <DependentUpon>SelecionarPagina.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -419,6 +435,7 @@
       <DependentUpon>LoginAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Classes\Aluno.cs" />
+    <Compile Include="Classes\Curso.cs" />
     <Compile Include="Classes\Pergunta.cs" />
     <Compile Include="Classes\Professor.cs" />
     <Compile Include="Global.asax.cs">
@@ -432,6 +449,7 @@
       <DependentUpon>Grafico.aspx</DependentUpon>
     </Compile>
     <Compile Include="Negocio\Aluno.cs" />
+    <Compile Include="Negocio\Curso.cs" />
     <Compile Include="Negocio\Pergunta.cs" />
     <Compile Include="Negocio\Professor.cs" />
     <Compile Include="Perguntas\Perguntas.aspx.cs">
