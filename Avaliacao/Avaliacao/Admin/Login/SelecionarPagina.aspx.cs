@@ -47,20 +47,20 @@ namespace Avaliacao.Admin.Login
             Response.Redirect("../Perguntas/ExibirPerguntas.aspx");
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         protected void ExibirCursos_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("../Cursos/ExibirCursos.aspx");
         }
 
 
         protected void btnLinkar_Click(object sender, EventArgs e)
         {
+            Response.Redirect("../Cursos/LinkarProfCurso.aspx");
+        }
 
+        protected void CadCurso_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Cursos/CadastroCursos.aspx");
         }
     }
 }
