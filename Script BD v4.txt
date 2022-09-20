@@ -1,0 +1,41 @@
+CREATE DATABASE pesquisa_satisfacao;
+USE pesquisa_satisfacao;
+CREATE TABLE professores ( id int PRIMARY key AUTO_INCREMENT, nome varchar(200) not null);
+CREATE TABLE alunos ( id int PRIMARY key AUTO_INCREMENT, nome varchar(200) not null);
+CREATE TABLE cursos ( id int PRIMARY key AUTO_INCREMENT, descricao varchar(200) not null);
+CREATE TABLE perguntas ( id int PRIMARY key AUTO_INCREMENT, descricao varchar(200) not null);
+CREATE TABLE resultados ( id int PRIMARY key AUTO_INCREMENT, 
+                        id_aluno int,
+                        FOREIGN KEY (id_aluno) REFERENCES alunos(id),
+                        id_curso int,
+                        FOREIGN KEY (id_curso) REFERENCES cursos(id),
+                        id_pergunta int,
+                        FOREIGN KEY (id_pergunta) REFERENCES perguntas(id),
+                        Resposta int);
+CREATE TABLE comentarios ( id int PRIMARY key AUTO_INCREMENT, 
+                        id_aluno int,
+                        FOREIGN KEY (id_aluno) REFERENCES alunos(id),
+                        id_curso int,
+                        FOREIGN KEY (id_curso) REFERENCES cursos(id),
+                        descricao text);            
+INSERT INTO `alunos`(`nome`) VALUES ('Anônimo'),('João'),('Maria'),('Pedro'),('Sunda');
+INSERT INTO `cursos`(`descricao`) VALUES ('Desenvolvimento de Sistemas'),('Mecânica'),('Eletrônica'),('Segurança do Trabalho'),('Mecatrônica');
+INSERT INTO `professores`(`nome`) VALUES ('Felipe'),('Patrick'),('Luiz'),('Antonio');
+INSERT INTO `perguntas`(`descricao`) VALUES ('Você está gostando do curso?'),('Você está conseguindo realizar as atividades propostas?'),('Seu professor te auxilia bem nas atividades?'),('Em sua sala há respeito entre os alunos e professor?'),('Os procedimentos e/ou atividades são bem explicados?');
+
+CREATE TABLE professor_curso(
+    id int AUTO_INCREMENT PRIMARY KEY NOT null,
+    id_prof int,
+    id_curso int,
+    FOREIGN KEY (id_prof) REFERENCES professores (id),
+    FOREIGN KEY (id_curso) REFERENCES cursos (id))
+
+INSERT INTO `professor_curso`(`id_prof`, `id_curso`) VALUES ('2','4'),('4','1'),('3','3'),('1','5');
+
+CREATE TABLE aluno_curso(
+    id int AUTO_INCREMENT PRIMARY KEY NOT null,
+    id_aluno int,
+    id_curso int,
+    FOREIGN KEY (id_aluno) REFERENCES alunos(id),
+    FOREIGN KEY (id_curso) REFERENCES cursos(id))
+    
