@@ -14,7 +14,12 @@ namespace Avaliacao.Admin.Cursos
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (Session["CAVALO"] == null)
+            {
+                Response.Redirect("../Login/LoginAdmin.aspx");
+            }
+
+            if (!IsPostBack)
             {
                 connection.Open();
                 ddlProf.Items.Clear();

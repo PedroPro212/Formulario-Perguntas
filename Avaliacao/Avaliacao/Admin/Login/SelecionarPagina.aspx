@@ -70,9 +70,9 @@
             <div class="quadro col-sm-2 text-center" style="border-width:3px; border-color:black; border-style:solid; border-radius:3px; margin-left:80px; padding-bottom:66px;">
                 <h5 style="filter: drop-shadow(black 1px 1px 1px); color: white;">Cursos</h5>
                 <img runat="server" class="center-block" src="../../imgs/livro.png" width="40" />
-                <asp:Button runat="server" CssClass="btns" ID="Button1" Text="Cadastrar Turma" OnClick="Button1_Click" BorderStyle="None" />
+                <asp:Button runat="server" CssClass="btns" ID="CadCurso" Text="Cadastrar Cursos" BorderStyle="None" OnClick="CadCurso_Click" />
                 <asp:Button runat="server" CssClass="btns" ID="ExibirCursos" Text="Exibir Cursos" OnClick="ExibirCursos_Click" BorderStyle="None" />
-                <asp:Button runat="server" CssClass="btns" ID="btnLinkar" Text="Linkar aluno a turma" OnClick="btnLinkar_Click" BorderStyle="None" />
+                <asp:Button runat="server" CssClass="btns" ID="btnLinkar" Text="Linkar professor a cursos" OnClick="btnLinkar_Click" BorderStyle="None" />
             </div>
                 
         </div>
