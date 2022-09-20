@@ -1,8 +1,0 @@
-CREATE TABLE professor_curso(
-    id int AUTO_INCREMENT PRIMARY KEY NOT null,
-    id_prof int,
-    id_curso int,
-    FOREIGN KEY (id_prof) REFERENCES professores (id),
-    FOREIGN KEY (id_curso) REFERENCES cursos (id))
-
-INSERT INTO `professor_curso`(`id_prof`, `id_curso`) VALUES ('2','4'),('4','1'),('3','3'),('1','5');
