@@ -5,6 +5,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yanone+Kaffeesatz&display=swap');
 
+        .titulo{
+             margin-left: 70px; 
+        }
+
         .botao {
             box-shadow: black 1px 1px 1px;
             margin-top: 15px;
@@ -50,18 +54,52 @@
                 padding-left: 10px;
                 font-size: 15px;
             }
+
+            @media (min-width:400px) and (max-width:1230px){
+                .container{
+                    background-color:green;
+                }
+
+                .box{
+                    width:80%;
+                    margin-left:100px;
+                }
+
+                .titulo{
+                    margin-left:40px;
+                }
+
+                .campo{
+                    width:200px;
+                }
+
+                .botao{
+                    width:200px;
+                }
+            }
+
+            @media(min-width:483x50) and (max-width:1170x54){
+                .container{
+                    background-color:red;
+                }
+
+                .box{
+                    width:80%;
+                    margin-left:20px;
+                }
+            }
     </style>
 
 
     <div class="container">
         <div class="box row">
-            <div class="col-sm-8" style="background-image: linear-gradient(to top, #1D3F40, #009ddd); margin-top: 50px;">
+            <div class="imagemPerfil col-sm-8" style="background-image: linear-gradient(to top, #1D3F40, #009ddd); margin-top: 50px;">
                 <img runat="server" id="imgLogin" src="../../imgs/user.png" width="360" style="margin-left: 150px;" />
             </div>
 
             <div class="col-sm-4 bg-info" style="border-radius: 0px 5px 5px 0px; margin-top: 50px;">
                 <div style="margin-left: 45px;">
-                    <h2 class="titulo" style="padding-top: 50px; margin-left: 70px; font-family: 'Bebas Neue', cursive;">Fazer login</h2>
+                    <h2 class="titulo" style="padding-top: 50px;font-family: 'Bebas Neue', cursive;">Fazer login</h2>
                     <p style="font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 20px; margin-bottom: 0px;">Login:</p>
                     <asp:TextBox runat="server" ID="txtLogin" CssClass="campo" onMouseOver="mDown(this)" onMouseOut="mUp(this)"></asp:TextBox><br />
                     <div>
