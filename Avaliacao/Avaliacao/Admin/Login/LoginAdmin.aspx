@@ -20,10 +20,10 @@
         }
 
             .botao:hover {
-                font-size: 20px;
+                font-size: 18px;
                 box-shadow: black 1px 1px 1px;
                 border-radius: 5px;
-                transition: font-size 0.1s;
+                transition: font-size 0.2s;
                 transition: border-radius 0.1s;
             }
 
@@ -35,20 +35,13 @@
             padding-left: 10px;
         }
 
-            .campo:hover {
-                background-color: #f3ecbe;
-                width: 300px;
-                height: 40px;
-                border-width: 1px;
-                transition: width 0.1s;
-                transition: height 0.1s;
-            }
-
             .campo:focus {
                 background-color: #f3ecbe;
                 color: black;
                 width: 300px;
                 height: 40px;
+                transition:width 0.1s;
+                transition:height 0.1s;
                 border-width: 1px;
                 font-family: 'Yanone Kaffeesatz', sans-serif;
                 padding-left: 10px;
