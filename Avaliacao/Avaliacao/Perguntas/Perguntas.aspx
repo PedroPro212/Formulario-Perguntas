@@ -20,6 +20,52 @@
             margin-bottom: 15px;
             font-size:18px;
         }
+         
+        body {
+            background-color: azure;
+        }
+
+        h2 {
+            font-size: 50PX;
+            color: black
+        }
+
+        .branco {
+            background-color: white
+        }
+
+        .button {
+            background-color: white;
+            color: #6392D6;
+           
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+            .button:hover {
+                background-color: White;
+                color: #336699
+            }
+
+        .foda {
+            padding: 15px 32px;
+        }
+
+        .fodase {
+            padding: 15px 18px;
+            min-width: 2px;
+        }
+
+        .textinho {
+            padding: 15px 32px;
+        }
+    
+
 
     </style>
 
@@ -31,16 +77,13 @@
             <img runat="server" src="../imgs/ibge.png" style="filter:drop-shadow(black 2px 2px 2px);"/>
         </div>
         <div class="col-sm-4">
-            <asp:DropDownList runat="server" ID="ddlCurso" CssClass="dropdown dropstart btn-sm" AutoPostBack="true" OnSelectedIndexChanged="ddlCurso_SelectedIndexChanged"></asp:DropDownList>
-            <asp:DropDownList runat="server" ID="ddlAluno" CssClass="dropdown dropend btn-sm" Visible="false"></asp:DropDownList>
+            <asp:DropDownList runat="server" ID="ddlCurso" CssClass="dropdown dropstart btn-sm fodase" AutoPostBack="true" OnSelectedIndexChanged="ddlCurso_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList runat="server" ID="ddlAluno" CssClass="dropdown dropend btn-sm"></asp:DropDownList>
             <br />
             <br />
             <div class="teste1"><b><asp:Panel runat="server" ID="lblTeste" CssClass="pb-3"></asp:Panel></b></div>
+            <asp:Button ID="BtnSubmit" Text="Enviar" runat="server" OnClick="BtnSubmit_Click" CssClass="button" Width="150px" />
 
-            <asp:Label runat="server">Insira um comentário sobre o curso: (não obrigatório)</asp:Label>
-            <asp:TextBox runat="server" ID="txtComentario" TextMode="MultiLine"></asp:TextBox>
-
-            <asp:Button ID="BtnSubmit" Text="Enviar" runat="server" OnClick="BtnSubmit_Click" CssClass="btn-success form-control" Width="150px" />
         </div>
         <div class="col-sm-4"></div>
 
