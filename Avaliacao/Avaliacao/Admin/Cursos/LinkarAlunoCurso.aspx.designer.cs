@@ -7,19 +7,10 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace Avaliacao.Perguntas {
+namespace Avaliacao.Admin.Cursos {
     
     
-    public partial class FrontEnd_Perguntas {
-        
-        /// <summary>
-        /// Controle ddlCurso.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCurso;
+    public partial class LinkarAlunoCurso {
         
         /// <summary>
         /// Controle ddlAluno.
@@ -31,30 +22,21 @@ namespace Avaliacao.Perguntas {
         protected global::System.Web.UI.WebControls.DropDownList ddlAluno;
         
         /// <summary>
-        /// Controle lblTeste.
+        /// Controle ddlCurso.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel lblTeste;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCurso;
         
         /// <summary>
-        /// Controle txtComentario.
+        /// Controle AtribuirAlunoCurso.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtComentario;
-        
-        /// <summary>
-        /// Controle BtnSubmit.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSubmit;
+        protected global::System.Web.UI.WebControls.Button AtribuirAlunoCurso;
     }
 }
