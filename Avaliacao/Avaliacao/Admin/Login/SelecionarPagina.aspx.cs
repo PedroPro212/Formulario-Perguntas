@@ -49,18 +49,23 @@ namespace Avaliacao.Admin.Login
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("../Admin/Cursos/CadastroCurso.aspx");
         }
 
         protected void ExibirCursos_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("ExibirCursos.aspx");
         }
 
 
         protected void btnLinkar_Click(object sender, EventArgs e)
         {
+            Response.Redirect("LinkarProfCurso.asps");
+        }
 
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+           
         }
     }
 }
