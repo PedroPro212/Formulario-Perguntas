@@ -31,11 +31,15 @@
             <img runat="server" src="../imgs/ibge.png" style="filter:drop-shadow(black 2px 2px 2px);"/>
         </div>
         <div class="col-sm-4">
-            <asp:DropDownList runat="server" ID="ddlAluno" CssClass="dropdown dropend btn-sm"></asp:DropDownList>
-            <asp:DropDownList runat="server" ID="ddlCurso" CssClass="dropdown dropstart btn-sm" ></asp:DropDownList>
+            <asp:DropDownList runat="server" ID="ddlCurso" CssClass="dropdown dropstart btn-sm" AutoPostBack="true" OnSelectedIndexChanged="ddlCurso_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList runat="server" ID="ddlAluno" CssClass="dropdown dropend btn-sm" Visible="false"></asp:DropDownList>
             <br />
             <br />
             <div class="teste1"><b><asp:Panel runat="server" ID="lblTeste" CssClass="pb-3"></asp:Panel></b></div>
+
+            <asp:Label runat="server">Insira um comentário sobre o curso: (não obrigatório)</asp:Label>
+            <asp:TextBox runat="server" ID="txtComentario" TextMode="MultiLine"></asp:TextBox>
+
             <asp:Button ID="BtnSubmit" Text="Enviar" runat="server" OnClick="BtnSubmit_Click" CssClass="btn-success form-control" Width="150px" />
         </div>
         <div class="col-sm-4"></div>
