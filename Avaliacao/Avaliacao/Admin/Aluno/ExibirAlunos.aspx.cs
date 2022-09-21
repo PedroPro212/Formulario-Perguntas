@@ -26,10 +26,17 @@ namespace Avaliacao.Admin.Aluno
 
             if (e.CommandName == "excluir")
             {
-                if (new Negocio.Aluno().Delete(alunos[index].Id))
-                    SiteMaster.ExibirAlert(this, "Aluno(a) excluído com sucesso!");
+                if (alunos[index].Id == 1)
+                {
+                    SiteMaster.AlertPersonalizado(this, "Anônimo não pode ser excluído.");
+                }
                 else
-                    SiteMaster.ExibirAlert(this, "O aluno(a) não pode ser excluído porque está sendo usado! ");
+                {
+                    if (new Negocio.Aluno().Delete(alunos[index].Id))
+                        SiteMaster.AlertPersonalizado(this, "Aluno(a) excluído com sucesso.");
+                    else
+                        SiteMaster.AlertPersonalizado(this, "O aluno(a) não pode ser excluído porque está sendo usado.");
+                }
                 PesquisarAluno_Click(null, null);
             }
         }
