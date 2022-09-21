@@ -13,15 +13,6 @@ namespace Avaliacao.Perguntas {
     public partial class FrontEnd_Perguntas {
         
         /// <summary>
-        /// Controle ddlAluno.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlAluno;
-        
-        /// <summary>
         /// Controle ddlCurso.
         /// </summary>
         /// <remarks>
@@ -31,6 +22,15 @@ namespace Avaliacao.Perguntas {
         protected global::System.Web.UI.WebControls.DropDownList ddlCurso;
         
         /// <summary>
+        /// Controle ddlAluno.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlAluno;
+        
+        /// <summary>
         /// Controle lblTeste.
         /// </summary>
         /// <remarks>
@@ -38,6 +38,15 @@ namespace Avaliacao.Perguntas {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel lblTeste;
+        
+        /// <summary>
+        /// Controle txtComentario.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtComentario;
         
         /// <summary>
         /// Controle BtnSubmit.

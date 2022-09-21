@@ -23,7 +23,7 @@ namespace Avaliacao.Admin.Cursos
             {
                 connection.Open();
                 ddlAluno.Items.Clear();
-                var reader = new MySqlCommand("SELECT nome, id FROM alunos", connection).ExecuteReader();
+                var reader = new MySqlCommand("SELECT nome, id FROM alunos WHERE id!=1", connection).ExecuteReader();
                 while (reader.Read())
                 {
                     var aluno = new ListItem(reader.GetString("nome"), reader.GetInt32("id").ToString());
