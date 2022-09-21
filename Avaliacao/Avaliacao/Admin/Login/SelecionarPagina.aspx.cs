@@ -62,5 +62,10 @@ namespace Avaliacao.Admin.Login
         {
             Response.Redirect("../Cursos/CadastroCursos.aspx");
         }
+
+        protected void btnLinkarAluno_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Cursos/LinkarAlunoCurso.aspx");
+        }
     }
 }

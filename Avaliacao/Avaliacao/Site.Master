@@ -64,9 +64,8 @@
                              <span class="caret"></span></a>
 
                             <ul class="dropdown-menu">
-                              <li><a                href="Admin/Aluno/AtualizarAlunos.aspx">Atualizar</a></li>
                               <li><a runat="server" href="~/Admin/Aluno/CadastroAlunos.aspx">Cadastrar</a></li>
-                              <li><a                href="Admin/Aluno/ExibirAlunos.aspx">Exibir</a></li>
+                              <li><a runat="server" href="Admin/Aluno/ExibirAlunos.aspx">Exibir</a></li>
 
                             </ul>
 
@@ -75,7 +74,6 @@
                              <span class="caret"></span></a>
                             
                             <ul class="dropdown-menu">
-                              <li><a                href="/Admin/Professor/AtualizarProfessores">Atualizar</a></li>
                               <li><a runat="server" href="/Admin/Professor/CadastroProfessores">Cadastrar</a></li>
                               <li><a runat="server" href="/Admin/Professor/ExibirProfessores">Exibir</a></li>
 
@@ -88,7 +86,8 @@
                             <ul class="dropdown-menu">
                               <li><a                href="Admin/Cursos/CadastroCursos.aspx">Cadastrar</a></li>
                               <li><a runat="server" href="~/Admin/Cursos/ExibirCursos.aspx">Exibir</a></li>
-                              <li><a runat="server" href="~/Admin/Cursos/LinkarProfCurso.aspx">Linkar</a></li>
+                              <li><a runat="server" href="~/Admin/Cursos/LinkarProfCurso.aspx">Atribuir Professor</a></li>
+                              <li><a runat="server" href="~/Admin/Cursos/LinkarAlunoCurso.aspx">Atribuir Aluno</a></li>
 
                             </ul>
 
