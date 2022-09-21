@@ -1,4 +1,4 @@
-﻿using MySqlConnector;
+﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace Avaliacao.Admin.Cursos
 {
-    public partial class LinkarProfCurso : System.Web.UI.Page
+    public partial class LinkarAlunoCurso : System.Web.UI.Page
     {
         private MySqlConnection connection = new MySqlConnection(SiteMaster.ConnectionString);
 
@@ -22,12 +22,12 @@ namespace Avaliacao.Admin.Cursos
             if (!IsPostBack)
             {
                 connection.Open();
-                ddlProf.Items.Clear();
-                var reader = new MySqlCommand("SELECT nome, id FROM professores", connection).ExecuteReader();
+                ddlAluno.Items.Clear();
+                var reader = new MySqlCommand("SELECT nome, id FROM alunos", connection).ExecuteReader();
                 while (reader.Read())
                 {
-                    var professor = new ListItem(reader.GetString("nome"), reader.GetInt32("id").ToString());
-                    ddlProf.Items.Add(professor);
+                    var aluno = new ListItem(reader.GetString("nome"), reader.GetInt32("id").ToString());
+                    ddlAluno.Items.Add(aluno);
                 }
                 connection.Close();
 
@@ -43,14 +43,14 @@ namespace Avaliacao.Admin.Cursos
             }
         }
 
-        protected void AtribuirProfCurso_Click(object sender, EventArgs e)
+        protected void AtribuirAlunoCurso_Click(object sender, EventArgs e)
         {
             connection.Open();
-            var comando = new MySqlCommand($"SELECT * FROM professor_curso WHERE id_prof='{ddlProf.SelectedValue}' AND id_curso='{ddlCurso.SelectedValue}'", connection);
+            var comando = new MySqlCommand($"SELECT * FROM aluno_curso WHERE id_aluno='{ddlAluno.SelectedValue}' AND id_curso='{ddlCurso.SelectedValue}'", connection);
             var reader = comando.ExecuteReader();
             if (reader.Read())
             {
-                SiteMaster.AlertPersonalizado(this, "Esse professor já está associado a este curso.");
+                SiteMaster.AlertPersonalizado(this, "Esse aluno já está associado a este curso.");
                 connection.Close();
                 return;
             }
@@ -58,7 +58,7 @@ namespace Avaliacao.Admin.Cursos
             {
                 connection.Close();
                 connection.Open();
-                comando = new MySqlCommand($"INSERT INTO `professor_curso`(`id_prof`, `id_curso`) VALUES ('{ddlProf.SelectedValue}','{ddlCurso.SelectedValue}')", connection);
+                comando = new MySqlCommand($"INSERT INTO `aluno_curso`(`id_aluno`, `id_curso`) VALUES ('{ddlAluno.SelectedValue}','{ddlCurso.SelectedValue}')", connection);
                 comando.ExecuteNonQuery();
                 connection.Close();
             }

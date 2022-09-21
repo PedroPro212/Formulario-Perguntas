@@ -32,12 +32,11 @@
         </div>
         <div class="col-sm-4">
             <asp:DropDownList runat="server" ID="ddlAluno" CssClass="dropdown dropend btn-sm"></asp:DropDownList>
-            <asp:DropDownList runat="server" ID="ddlCurso" CssClass="dropdown dropstart btn-sm"></asp:DropDownList>
+            <asp:DropDownList runat="server" ID="ddlCurso" CssClass="dropdown dropstart btn-sm" ></asp:DropDownList>
             <br />
             <br />
             <div class="teste1"><b><asp:Panel runat="server" ID="lblTeste" CssClass="pb-3"></asp:Panel></b></div>
             <asp:Button ID="BtnSubmit" Text="Enviar" runat="server" OnClick="BtnSubmit_Click" CssClass="btn-success form-control" Width="150px" />
-
         </div>
         <div class="col-sm-4"></div>
 
