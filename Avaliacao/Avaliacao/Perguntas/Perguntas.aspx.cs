@@ -42,7 +42,7 @@ namespace Avaliacao.Perguntas
             {
                 Label enunciado = new Label { Text = $"{i + 1}. {reader.GetString("descricao")}", ID = reader.GetInt32("id").ToString() };
                 listaPerguntas.Add(enunciado);
-
+                //pedro gay
                 var rdn = new RadioButtonList { ID = $"rdnPergunta[{i + 1}]", RepeatDirection = RepeatDirection.Horizontal };
                 listaAlternativas.Add(rdn);
 
