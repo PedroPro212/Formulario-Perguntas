@@ -37,8 +37,8 @@
         .button {
             background-color: white;
             color: #6392D6;
-           
-            padding: 15px 32px;
+           border:groove;
+            padding: 15px 12px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -58,7 +58,7 @@
 
         .fodase {
             padding: 15px 18px;
-            min-width: 2px;
+            min-width: 10px;
         }
 
         .textinho {
@@ -68,6 +68,9 @@
 
 
     </style>
+
+    
+
 
     <div class="container">
         <h2 style="font-size: 45px; font-family: 'Bebas Neue', cursive;" class="text-center">Pesquisa de Satisfação</h2>
@@ -83,7 +86,7 @@
             <br />
             <div class="teste1"><b><asp:Panel runat="server" ID="lblTeste" CssClass="pb-3"></asp:Panel></b></div>
             <asp:Label runat="server">Insira um comentário sobre o curso: (não obrigatório)</asp:Label>
-            <asp:TextBox runat="server" ID="txtComentario" TextMode="MultiLine"></asp:TextBox>
+            <asp:TextBox runat="server" Columns="50" Rows="5" ID="txtComentario" CssClass="fodase" TextMode="MultiLine"></asp:TextBox>
             <asp:Button ID="BtnSubmit" Text="Enviar" runat="server" OnClick="BtnSubmit_Click" CssClass="button" Width="150px" />
 
         </div>
