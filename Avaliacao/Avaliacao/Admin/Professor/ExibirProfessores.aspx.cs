@@ -38,9 +38,9 @@ namespace Avaliacao.Admin.Professor
             if (e.CommandName == "excluir")
             {
                 if (new Negocio.Professor().Delete(professores[index].Id))
-                    SiteMaster.ExibirAlert(this, "Professor(a) excluído com sucesso!");
+                    SiteMaster.AlertPersonalizado(this, "Professor(a) excluído com sucesso.");
                 else
-                    SiteMaster.ExibirAlert(this, "O professor(a) não pode ser excluído porque está sendo usado! ");
+                    SiteMaster.AlertPersonalizado(this, "O professor(a) não pode ser excluído porque está atribuído a um curso.");
                 PesquisarProf_Click(null, null);
             }
         }

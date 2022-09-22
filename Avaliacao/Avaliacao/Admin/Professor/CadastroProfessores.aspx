@@ -59,8 +59,6 @@
 
     <label  style="font-size:25px"> Nome:</label>               <asp:TextBox CssClass="fodase" runat="server" ID="txtNome"></asp:TextBox>
 
-    <label  style="font-size:25px"> Escolha uma turma:</label>   <asp:DropDownList runat="server" CssClass="foda" ID="ddlTurma"></asp:DropDownList>
-
     <asp:Button runat="server" CssClass="button" ID="CadastrarProfessor" Text="Cadastrar" OnClick="CadastrarProfessor_Click" />
         <br>
         <br>
