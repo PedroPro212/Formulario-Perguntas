@@ -84,7 +84,7 @@
                              <span class="caret"></span></a>
                             
                             <ul class="dropdown-menu">
-                              <li><a                href="Admin/Cursos/CadastroCursos.aspx">Cadastrar</a></li>
+                              <li><a runat="server" href="Admin/Cursos/CadastroCursos.aspx">Cadastrar</a></li>
                               <li><a runat="server" href="~/Admin/Cursos/ExibirCursos.aspx">Exibir</a></li>
                               <li><a runat="server" href="~/Admin/Cursos/LinkarProfCurso.aspx">Atribuir Professor</a></li>
                               <li><a runat="server" href="~/Admin/Cursos/LinkarAlunoCurso.aspx">Atribuir Aluno</a></li>
@@ -118,7 +118,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <div style="margin-bottom:230px"></div>
-            <footer>
+            <footer style="display:none;">
                 <p>&copy; <%: DateTime.Now.Year %> - Avaliação</p>
             </footer>
         </div>
