@@ -118,7 +118,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <div style="margin-bottom:230px"></div>
-            <footer>
+            <footer style="display:none;">
                 <p>&copy; <%: DateTime.Now.Year %> - Avaliação</p>
             </footer>
         </div>

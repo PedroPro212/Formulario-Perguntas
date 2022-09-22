@@ -35,6 +35,20 @@
                 color: #336699
             }
 
+        .btn {
+            background-color: #FFC219;
+            width: 100px;
+            color: black;
+            font-size: 14px;
+            box-shadow: black 1px 1px;
+        }
+
+            .btn:hover {
+                width: 110px;
+                height: 40px;
+                padding-top: 10px;
+            }
+
         .foda {
             padding: 15px 32px;
         }
@@ -49,45 +63,42 @@
         }
     </style>
 
+    <div class="container">
+        <div class="jumbotron col-sm-12" style="background-color: #65A1A6">
+            <div>
+                <h2 class="titulo text-center" style="font-family: Impact, fantasy">Exibir Alunos
+             <asp:Image runat="server" ID="Image1" src="/../../imgs/icons8_identification_documents_48.png" /></h2>
+            </div>
 
-    <div class="jumbotron" style="background-color: #65A1A6">
+            <br>
+            <br>
+            <hr>
+            <br>
+            <div class="text-center" style="padding-bottom: 30px;">
+                <asp:TextBox runat="server" CssClass="fodase" ID="txtNome" placeholder="Digite o aluno para pesquisar"></asp:TextBox>
+                <asp:Button runat="server" CssClass="button" ID="PesquisarAluno" Text="Pesquisar" OnClick="PesquisarAluno_Click" />
+                <asp:Button runat="server" CssClass="button" ID="CadastrarAluno" Text="Cadastrar Aluno" OnClick="CadastrarAluno_Click" />
+            </div>
+        </div>
         <div>
-            <h2 class="titulo text-center" style="font-family: Impact, fantasy">Exibir Alunos
-         <asp:Image runat="server" ID="Image1" src="/../../imgs/icons8_identification_documents_48.png" /></h2>
-        </div>
-
-        <br>
-        <br>
-        <hr>
-        <br>
-        <div class="text-center">
-            <asp:TextBox runat="server" CssClass="fodase" ID="txtNome" placeholder="Digite o aluno para pesquisar"></asp:TextBox>
-            <asp:Button runat="server" CssClass="button" ID="PesquisarAluno" Text="Pesquisar" OnClick="PesquisarAluno_Click" />
-            <asp:Button runat="server" CssClass="button" ID="CadastrarAluno" Text="Cadastrar Aluno" OnClick="CadastrarAluno_Click" />
-        </div>
-
-        <div class="row">
             <div class="col-sm-3"></div>
-            <div class="col-sm-8">
+            <div class="col-sm-6">
 
                 <asp:GridView runat="server" ID="grdAlunos" Width="80%" AutoGenerateColumns="false"
-                    CssClass="table table-sm table-bordered table-condensed table-responsive-sm table-hover table-dark" OnRowCommand="grdAlunos_RowCommand"
+                    CssClass="table table-sm table-bordered table-condensed table-responsive-sm table-dark table-dark" OnRowCommand="grdAlunos_RowCommand"
                     AllowPaging="true">
-                    
+
                     <Columns>
                         <asp:BoundField DataField="nome" HeaderText="NOME" />
-                        <asp:ButtonField ButtonType="Link" CommandName="excluir" ControlStyle-CssClass="btn btn-danger" Text="Excluir" HeaderText="Excluir" />
+                        <asp:ButtonField ButtonType="Link" CommandName="excluir" ControlStyle-CssClass="btn" Text="Excluir" ItemStyle-HorizontalAlign="Center" />
                     </Columns>
-
 
                 </asp:GridView>
             </div>
-            <div class="col-sm-1"></div>
+            <div class="col-sm-3"></div>
         </div>
-
-    <div class="col-sm-3"></div>
-    <br>
-    <hr>
+        <br>
+        <hr>
     </div>
 
 </asp:Content>

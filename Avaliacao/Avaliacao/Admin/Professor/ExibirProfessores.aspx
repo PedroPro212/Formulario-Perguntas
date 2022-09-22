@@ -32,16 +32,34 @@
                 color: #336699
             }
 
+            .btn{
+                background-color:#FFC219;
+                width:100px;
+                color:black;
+                font-size:14px;
+                box-shadow:black 1px 1px;
+            }
+                .btn:hover{
+                    width:110px;
+                    height:40px;
+                    padding-top:10px;
+                }
+
+        .fundo{
+            background-color: #65A1A6;
+        }
+
         .fodase {
             padding: 15px 32px;
             min-width: 600px;
         }
+
     </style>
 
 
 
 
-    <div class="jumbotron" style="background-color: #65A1A6">
+    <div class="fundo">
 
         <h2 class="titulo text-center" style="font-family: Impact, fantasy">Exibir Professores  
             <asp:Image runat="server" ID="Image1" src="/../../imgs/icons8_show_property_48.png" /></h2>
@@ -64,15 +82,13 @@
         <br>
         <br>
         <hr>
-
         <div class="col-sm-3"></div>
-        <div class="col-sm-5">
+        <div class="col-sm-6 table-responsive">
 
-            <asp:GridView runat="server" ID="grdProf" Width="100%" AutoGenerateColumns="false" OnRowCommand="grdProf_RowCommand">
+            <asp:GridView runat="server" CssClass="table table-sm table-bordered table-condensed table-responsive-sm table-dark table-dark" ID="grdProf" Width="100%" AutoGenerateColumns="false" OnRowCommand="grdProf_RowCommand">
                 <Columns>
-                    <asp:BoundField DataField="nome" HeaderText="NOME" />
-                    <asp:ButtonField ButtonType="Link" CommandName="editar" ControlStyle-CssClass="btn btn-warning" Text="Editar" />
-                    <asp:ButtonField ButtonType="Link" CommandName="excluir" ControlStyle-CssClass="btn btn-danger" Text="Excluir" />
+                    <asp:BoundField ControlStyle-CssClass="tit" DataField="nome" HeaderText="NOME" />
+                    <asp:ButtonField ButtonType="Link" CommandName="excluir" ControlStyle-CssClass="btn" Text="Excluir" ItemStyle-HorizontalAlign="Center" />
                 </Columns>
 
             </asp:GridView>
