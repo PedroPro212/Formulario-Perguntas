@@ -61,8 +61,8 @@
         <br>
         <%--jooj--%>
 
-        <label style="font-size: 25px">Selecionar Professor</label>
-
+        <label style="font-size: 25px">Selecionar Curso</label>
+        
     <asp:TextBox CssClass="foda" runat="server" ID="txtCurso"></asp:TextBox>
     <asp:Button CssClass="button" runat="server" ID="PesquisarCurso" Text="Pesquisar" OnClick="PesquisarCurso_Click"/>
     <asp:Button CssClass="button" runat="server" ID="CadastrarCurso" Text="Cadastrar Curso" OnClick="CadastrarCurso_Click"/>

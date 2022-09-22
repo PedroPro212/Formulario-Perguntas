@@ -54,11 +54,11 @@
             <asp:TextBox runat="server" ID="txtNome" CssClass="fodase" placeholder="Digite o professor para pesquisar" Width="690px"></asp:TextBox>
 
             <asp:Button runat="server" ID="PesquisarProf" Text="Pesquisar" CssClass="button" OnClick="PesquisarProf_Click" />
-
+            <asp:Button runat="server" ID="CadastrarProf" CssClass="button" Text="Cadastrar Professor" OnClick="CadastrarProf_Click" />
             <br />
             <br />
 
-            <asp:Button runat="server" ID="CadastrarProf" CssClass="button" Text="Cadastrar Novo Professor" OnClick="CadastrarProf_Click" />
+            
         </div>
 
         <br>
@@ -77,7 +77,7 @@
 
             </asp:GridView>
         </div>
-        ]<div class="col-sm-3"></div>
+        <div class="col-sm-3"></div>
     </div>
 
 </asp:Content>
