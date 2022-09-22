@@ -25,10 +25,6 @@
                 width: 160px;
             }
 
-        #btnLinkar{
-            
-        }
-
         .quadro:hover {
             margin-top: 15px;
             transition: margin-top 0.2s;
