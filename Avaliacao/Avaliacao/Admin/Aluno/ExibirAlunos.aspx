@@ -44,9 +44,8 @@
         }
 
             .btn:hover {
-                width: 110px;
-                height: 40px;
-                padding-top: 10px;
+                background-color: #ffb238;
+                color:white;
             }
 
         .foda {
@@ -97,8 +96,6 @@
             </div>
             <div class="col-sm-3"></div>
         </div>
-        <br>
-        <hr>
     </div>
 
 </asp:Content>

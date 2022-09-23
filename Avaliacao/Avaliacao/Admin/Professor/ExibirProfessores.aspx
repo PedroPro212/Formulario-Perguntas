@@ -33,16 +33,14 @@
             }
 
             .btn{
-                background-color:#FFC219;
-                width:100px;
-                color:black;
-                font-size:14px;
-                box-shadow:black 1px 1px;
+                background-color: #FFC219;
+                width: 100px;
+                color: black;
+                font-size: 14px;
+                box-shadow: black 1px 1px;
             }
                 .btn:hover{
-                    width:110px;
-                    height:40px;
-                    padding-top:10px;
+                    background-color:#ffb238; 
                 }
 
         .fundo{
