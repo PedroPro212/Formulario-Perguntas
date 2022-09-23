@@ -16,7 +16,7 @@
             border-color: black;
             border-width: 1px;
             font-family: 'Yanone Kaffeesatz', sans-serif;
-            font-size: 19px;
+            font-size: 17px;
             box-shadow: black 1px 1px 1px;
             background-color: #FFC219;
         }
@@ -24,6 +24,10 @@
             .btns:hover {
                 width: 160px;
             }
+
+        #btnLinkar{
+            
+        }
 
         .quadro:hover {
             margin-top: 15px;
@@ -68,12 +72,13 @@
                 <asp:Button runat="server" CssClass="btns" ID="ExibPergunta" Text="Exibir Perguntas" OnClick="ExibPergunta_Click" BorderStyle="none" />
             </div>
 
-            <div class="quadro col-sm-2 text-center" style="border-width: 3px; border-color: black; border-style: solid; border-radius: 3px; margin-left: 80px; padding-bottom: 66px;">
+            <div class="quadro col-sm-2 text-center" style="border-width: 3px; border-color: black; border-style: solid; border-radius: 3px; margin-left: 80px; padding-bottom: 22px;">
                 <h5 style="filter: drop-shadow(black 1px 1px 1px); color: white;">Cursos</h5>
                 <img runat="server" class="center-block" src="../../imgs/livro.png" width="40" />
                 <asp:Button runat="server" CssClass="btns" ID="CadCurso" Text="Cadastrar Cursos" BorderStyle="None" OnClick="CadCurso_Click" />
                 <asp:Button runat="server" CssClass="btns" ID="ExibirCursos" Text="Exibir Cursos" OnClick="ExibirCursos_Click" BorderStyle="None" />
-                <asp:Button runat="server" CssClass="btns" ID="btnLinkar" Text="Linkar professor a cursos" OnClick="btnLinkar_Click" BorderStyle="None" />
+                <asp:Button runat="server" CssClass="btns" ID="btnLinkar" Text="Atribuir professor a curso" OnClick="btnLinkar_Click" BorderStyle="None" />
+                <asp:Button runat="server" CssClass="btns" ID="btnLinkarAluno" Text="Atribuir aluno a curso" OnClick="btnLinkarAluno_Click" BorderStyle="None" />
             </div>
 
         </div>
