@@ -81,7 +81,7 @@
         <div class="row">
             <div class="col-sm-12 text-center">
                 <div>
-                    <img runat="server" class="imgProf" src="/imgs/juan.png" width="140" style="margin-right: 12px; margin-top: 30px; margin-bottom: 15px; filter: drop-shadow(black 1px 1px 1px);" />
+                    <img runat="server" class="imgProf" src="/imgs/admis.png" width="140" style="margin-right: 12px; margin-top: 30px; margin-bottom: 15px; filter: drop-shadow(black 1px 1px 1px);" />
                 </div>
             </div>
         </div>
