@@ -61,6 +61,7 @@ namespace Avaliacao.Admin.Cursos
                 comando = new MySqlCommand($"INSERT INTO `professor_curso`(`id_prof`, `id_curso`) VALUES ('{ddlProf.SelectedValue}','{ddlCurso.SelectedValue}')", connection);
                 comando.ExecuteNonQuery();
                 connection.Close();
+                SiteMaster.AlertPersonalizado(this, "Atribuição sucedida.");
             }
         }
     }

@@ -33,7 +33,7 @@ namespace Avaliacao.Admin
                 professor.Nome = txtNome.Text;
                 new Negocio.Professor().Create(professor);
 
-                SiteMaster.ExibirAlert(this, "Professor cadastrado com sucesso!");
+                SiteMaster.AlertPersonalizado(this, "Professor(a) cadastrado com sucesso.");
                 txtNome.Text = "";
             }
         }

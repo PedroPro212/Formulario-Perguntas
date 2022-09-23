@@ -85,7 +85,7 @@
 
                 <asp:GridView runat="server" ID="grdAlunos" Width="80%" AutoGenerateColumns="false"
                     CssClass="table table-sm table-bordered table-condensed table-responsive-sm table-dark table-dark" OnRowCommand="grdAlunos_RowCommand"
-                    AllowPaging="true">
+                    AllowPaging="false">
 
                     <Columns>
                         <asp:BoundField DataField="nome" HeaderText="NOME" />

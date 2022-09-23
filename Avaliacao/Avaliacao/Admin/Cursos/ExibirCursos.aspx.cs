@@ -38,9 +38,9 @@ namespace Avaliacao.Admin.Cursos
             if (e.CommandName == "excluir")
             {
                 if (new Negocio.Curso().Delete(cursos[index].Id))
-                    SiteMaster.ExibirAlert(this, "Curso excluído com sucesso!");
+                    SiteMaster.AlertPersonalizado(this, "Curso excluído com sucesso.");
                 else
-                    SiteMaster.ExibirAlert(this, "O curso não pode ser excluído porque está sendo usado! ");
+                    SiteMaster.AlertPersonalizado(this, "O curso não pode ser excluído porque está sendo usado.");
                 PesquisarCurso_Click(null, null);
             }
         }

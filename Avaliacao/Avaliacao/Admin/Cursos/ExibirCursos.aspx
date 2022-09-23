@@ -78,7 +78,7 @@
         <div class="col-sm-6">
             <asp:GridView runat="server" ID="grdCursos" Width="80%" AutoGenerateColumns="false"
                 CssClass="table table-sm table-bordered table-condensed table-responsive-sm table-dark table-dark" OnRowCommand="grdCursos_RowCommand"
-                AllowPaging="true">
+                AllowPaging="false">
 
                 <Columns>
                     <asp:BoundField DataField="descricao" HeaderText="DESCRIÇÃO" />
