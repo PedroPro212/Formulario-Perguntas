@@ -9,6 +9,8 @@ using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
+
+
 namespace Avaliacao.Perguntas
 {
     public partial class FrontEnd_Perguntas : System.Web.UI.Page
@@ -40,16 +42,22 @@ namespace Avaliacao.Perguntas
             int i = 0;
             while (reader.Read())
             {
-                Label enunciado = new Label { Text = $"{i + 1}. {reader.GetString("descricao")}", ID = reader.GetInt32("id").ToString() };
+                string pergunta = reader.GetString("descricao");
+                for (int t = pergunta.Length; t < 100; t++)
+                    pergunta += "&nbsp;";
+                Label enunciado = new Label { Text = $"{i + 1}. {pergunta}", ID = reader.GetInt32("id").ToString() };
                 listaPerguntas.Add(enunciado);
+                //pedro gay
 
-                var rdn = new RadioButtonList { ID = $"rdnPergunta[{i + 1}]", RepeatDirection = RepeatDirection.Horizontal };
+                var rdn = new RadioButtonList { ID = $"rdnPergunta[{i + 1}]", RepeatDirection = RepeatDirection.Horizontal, /*codigo*/CssClass = "FormatRadioButtonList" } /*codigo}*/; 
                 listaAlternativas.Add(rdn);
 
                 for (int n = 1; n <= 5; n++)
                 {
-                    var alt = new ListItem("" + n, "" + n);
+
+                    var alt = new ListItem("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;", "" + n);
                     listaAlternativas[i].Items.Add(alt);
+
                 }
                 i++;
             }
@@ -57,7 +65,13 @@ namespace Avaliacao.Perguntas
 
             for (i = 0; i < listaPerguntas.Count; i++)
             {
+                //var imagem_ruim = new System.Web.UI.WebControls.Image();
+                //imagem_ruim.ImageUrl = "../imgs/icons8_sad_48.png";
+                //lblTeste.Controls.Add(imagem_ruim);
                 lblTeste.Controls.Add(listaPerguntas[i]);
+                //var imagem_boa = new System.Web.UI.WebControls.Image();
+                //imagem_boa.ImageUrl = "../imgs/icons8_happy_48.png";
+                //lblTeste.Controls.Add(imagem_boa);
                 lblTeste.Controls.Add(listaAlternativas[i]);
             }
         }
@@ -67,11 +81,13 @@ namespace Avaliacao.Perguntas
             if (ddlCurso.SelectedValue != "0")
             {
                 int x = lblTeste.Controls.Count;
-                for (int i = 0; i < x; i += 2)
+                for (int i = 2; i < x; i += 4)
                 {
                     connection.Open();
                     var comando = new MySqlCommand($"INSERT INTO `resultados`(`id_aluno`, `id_curso`, `id_pergunta`, `Resposta`) " +
-                        $"VALUES ('{ddlAluno.SelectedValue}','{ddlCurso.SelectedValue}','{((Label)lblTeste.Controls[i]).ID}','{((RadioButtonList)lblTeste.Controls[i + 1]).SelectedValue}')", connection);
+                        $"VALUES ('{ddlAluno.SelectedValue}','{ddlCurso.SelectedValue}','{((Label)lblTeste.Controls[i]).ID}'," +
+                        $"'" +$"{((RadioButtonList)lblTeste.Controls[i + 1]).SelectedValue}')" +
+                        $"", connection);
                     comando.ExecuteNonQuery();
                     connection.Close();
                 }
