@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Avaliacao.SiteMaster" %>
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Avaliacao.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -90,6 +91,16 @@
 
                             </ul>
 
+                        <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Perguntas
+                             <span class="caret"></span></a>
+                            
+                            <ul class="dropdown-menu">
+                              <li><a runat="server" href="~/Admin/Perguntas/CadastroPerguntas.aspx">Cadastrar</a></li>
+                              <li><a runat="server" href="~/Admin/Perguntas/ExibirPerguntas.aspx">Exibir</a></li>
+
+                            </ul>
+
 
                         <li class="dropdown" >
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Outros
@@ -101,7 +112,7 @@
                         <li>
                             <a><span></span></a>
 
-                            <div style="width:500px"></div>
+                            <div style="width:400px"></div>
                               <li> <a href="/Perguntas/Perguntas"><img src="/../../imgs/questions_24px.png" class="media-object  img-responsive" ></a></li>
                               <li><a runat="server" href="~/Perguntas/Perguntas.aspx"><img src="/../../imgs/sair.png"  class="media-object  img-responsive" width="24" ></a></li>
                                 
