@@ -19,7 +19,7 @@
     </asp:PlaceHolder>
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="imgs/favicon-16x16.png" rel="shortcut icon" type="image/x-icon" />
 
 </head>
 <body>
@@ -57,7 +57,6 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <%--<li><a runat="server" href="~/Admin/Login/LoginAdmin">Login Admin</a></li>--%>
                         
                         <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Alunos
@@ -106,8 +105,6 @@
                               <li> <a href="/Perguntas/Perguntas"><img src="/../../imgs/questions_24px.png" class="media-object  img-responsive" ></a></li>
                               <li><a runat="server" href="~/Perguntas/Perguntas.aspx"><img src="/../../imgs/sair.png"  class="media-object  img-responsive" width="24" ></a></li>
                                 
-
-                        <%--balboa--%>
                     </ul>
                 </div>
                  
@@ -125,7 +122,7 @@
 
     </form>
 
-    <script>
+<%--    <script>
         $(function () {
             timeout = setTimeout(function () {
                 window.location.href = "/Perguntas/Perguntas.aspx";
@@ -140,7 +137,7 @@
                 window.location.href = "/Perguntas/Perguntas.aspx";
             }, 600000);
         });
-    </script>
+    </script>--%>
 
 </body>
 </html>
